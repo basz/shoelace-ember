@@ -1,6 +1,6 @@
 # @shoelace-style/ember
 
-[Short description of the addon.]
+Proof of concept addon which integrates [shoelace](https://shoelace.style/) into an ember application.
 
 ## Compatibility
 
