@@ -16,7 +16,7 @@
   "scripts": {
     "build": "concurrently 'npm:build:*'",
     "build:js": "rollup --config",
-    "build:types": "glint --declaration", 
+    "build:types": "glint --declaration",
     "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
     "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
@@ -31,40 +31,42 @@
     "prepack": "rollup --config"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.0.0"
+    "@embroider/addon-shim": "^1.0.0",
+    "@shoelace-style/shoelace": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
-    "@babel/preset-typescript": "^7.18.6",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.20.13",
+    "@babel/preset-typescript": "^7.18.6",
     "@babel/runtime": "^7.17.0",
     "@embroider/addon-dev": "^3.0.0",
+    "@glimmer/component": "^1.1.2",
     "@glint/core": "^1.0.2",
     "@glint/environment-ember-loose": "^1.0.2",
     "@glint/template": "^1.0.2",
+    "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^2.0.0",
     "@types/ember": "^4.0.4",
-    "@types/ember__object": "^4.0.6",
-    "@types/ember__owner": "^4.0.4",
-    "@types/ember__service": "^4.0.3",
+    "@types/ember__application": "^4.0.6",
+    "@types/ember__array": "^4.0.4",
+    "@types/ember__component": "^4.0.14",
     "@types/ember__controller": "^4.0.5",
-    "@types/ember__string": "^3.16.3",
-    "@types/ember__template": "^4.0.2",
-    "@types/ember__polyfills": "^4.0.2",
-    "@types/ember__utils": "^4.0.3",
-    "@types/ember__runloop": "^4.0.3",
     "@types/ember__debug": "^4.0.4",
     "@types/ember__engine": "^4.0.5",
-    "@types/ember__application": "^4.0.6",
-    "@types/ember__test": "^4.0.2",
-    "@types/ember__array": "^4.0.4",
     "@types/ember__error": "^4.0.3",
-    "@types/ember__component": "^4.0.14",
+    "@types/ember__object": "^4.0.6",
+    "@types/ember__owner": "^4.0.4",
+    "@types/ember__polyfills": "^4.0.2",
     "@types/ember__routing": "^4.0.13",
+    "@types/ember__runloop": "^4.0.3",
+    "@types/ember__service": "^4.0.3",
+    "@types/ember__string": "^3.16.3",
+    "@types/ember__template": "^4.0.2",
+    "@types/ember__test": "^4.0.2",
+    "@types/ember__utils": "^4.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
-    "@rollup/plugin-babel": "^6.0.3",
     "concurrently": "^8.0.1",
     "ember-template-lint": "^5.7.3",
     "eslint": "^8.33.0",
@@ -86,7 +88,14 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./index.js": "./dist/_app_/index.js",
+      "./initializers/shoelace.js": "./dist/_app_/initializers/shoelace.js"
+    },
+    "public-assets": {
+      "./public/assets/icons/browser-chrome.svg": "@shoelace-style/ember/assets/icons/browser-chrome.svg"
+    }
   },
   "exports": {
     ".": {

@@ -18,12 +18,21 @@ export default {
   plugins: [
     // These are the modules that users should be able to import from your
     // addon. Anything not listed here may get optimized away.
-    addon.publicEntrypoints(['components/**/*.js', 'index.js', 'template-registry.js']),
+    addon.publicEntrypoints([
+      'components/**/*.js',
+      'initializers/**/*.js',
+      'index.js',
+      'template-registry.js',
+    ]),
 
     // These are the modules that should get reexported into the traditional
     // "app" tree. Things in here should also be in publicEntrypoints above, but
     // not everything in publicEntrypoints necessarily needs to go here.
-    addon.appReexports(['components/**/*.js']),
+    addon.appReexports([
+      'components/**/*.js',
+      'index.js',
+      'initializers/**/*.js',
+    ]),
 
     // Follow the V2 Addon rules about dependencies. Your code can import from
     // `dependencies` and `peerDependencies` as well as standard Ember-provided
@@ -56,6 +65,14 @@ export default {
       targets: [
         { src: '../../README.md', dest: '.' },
         { src: '../../LICENSE.md', dest: '.' },
+        {
+          src: './node_modules/@shoelace-style/shoelace/dist/assets',
+          dest: './public',
+        },
+        {
+          src: './node_modules/@shoelace-style/shoelace/dist/themes',
+          dest: './public',
+        },
       ],
     }),
   ],
