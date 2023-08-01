@@ -90,7 +90,6 @@
     "type": "addon",
     "main": "addon-main.cjs",
     "app-js": {
-      "./index.js": "./dist/_app_/index.js",
       "./initializers/shoelace.js": "./dist/_app_/initializers/shoelace.js"
     },
     "public-assets": {
