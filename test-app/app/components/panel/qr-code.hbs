@@ -1,0 +1,28 @@
+<div class="qr-overview">
+  <sl-qr-code value="https://shoelace.style/" label="Scan this code to visit Shoelace on the web!"></sl-qr-code>
+  <br />
+
+  <sl-input maxlength="255" clearable label="Value"></sl-input>
+</div>
+
+<script>
+ const container = document.querySelector('.qr-overview');
+  const qrCode = container.querySelector('sl-qr-code');
+  const input = container.querySelector('sl-input');
+
+  customElements.whenDefined('sl-qr-code').then(() => {
+    input.value = qrCode.value;
+    input.addEventListener('sl-input', () => (qrCode.value = input.value));
+  });
+
+</script>
+
+<style>
+  .qr-overview {
+    max-width: 256px;
+  }
+
+  .qr-overview sl-input {
+    margin-top: 1rem;
+  }
+</style>

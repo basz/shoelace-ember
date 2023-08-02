@@ -87,32 +87,39 @@ export async function initialize(application: Application) {
       case 'alert':
         import(`@shoelace-style/shoelace/dist/components/alert/alert.js`);
         break;
+
       case 'animated-image':
         import(
           `@shoelace-style/shoelace/dist/components/animated-image/animated-image.js`
         );
         break;
+
       case 'animation':
         import(
           `@shoelace-style/shoelace/dist/components/animation/animation.js`
         );
         break;
+
       case 'avatar':
         import(`@shoelace-style/shoelace/dist/components/avatar/avatar.js`);
         break;
+
       case 'badge':
         import(`@shoelace-style/shoelace/dist/components/badge/badge.js`);
         break;
+
       case 'breadcrumb':
         import(
           `@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js`
         );
         break;
+
       case 'breadcrumb-item':
         import(
           `@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js`
         );
         break;
+
       case 'button':
         import(`@shoelace-style/shoelace/dist/components/button/button.js`);
         break;

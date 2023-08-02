@@ -2,10 +2,28 @@
 
 <h2 id="title">@shoelace-style/ember</h2>
 
-<sl-alert slot="icon" name="info-circle" open>This is an alert</sl-alert>
+<p>
+  This is a demo of the <code>@shoelace-style/ember</code> addon. It includes all of the components and utilities
+  available in the addon, and it's a great way to test and debug the addon locally.
+</p>
 
-<sl-badge>Badge</sl-badge>
+<sl-tab-group
+  placement="start"
+  {{did-insert this.onInsert}}
+  {{on "sl-tab-show" this.onShowPanel}}
+  {{on "sl-tab-hide" this.onHidePanel}}
+>
+  {{#each this.components as |component|}}
+    <sl-tab slot="nav" panel={{component}}>{{component}}</sl-tab>
+  {{/each}}
 
-<sl-icon name="browser-chrome"></sl-icon>
+  <sl-tab-panel name={{this.activePanelName}}>
+    <div>
+      <h3>{{this.activePanelName}}</h3>
+      <hr>
 
-{{outlet}}
+      <this.activePanelComponent />
+    </div>
+  </sl-tab-panel>
+
+</sl-tab-group>

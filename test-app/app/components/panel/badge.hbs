@@ -1,0 +1,19 @@
+<sl-badge variant="primary">Primary</sl-badge>
+<sl-badge variant="success">Success</sl-badge>
+<sl-badge variant="neutral">Neutral</sl-badge>
+<sl-badge variant="warning">Warning</sl-badge>
+<sl-badge variant="danger">Danger</sl-badge>
+
+<div class="badge-pulse">
+  <sl-badge variant="primary" pill pulse>1</sl-badge>
+  <sl-badge variant="success" pill pulse>1</sl-badge>
+  <sl-badge variant="neutral" pill pulse>1</sl-badge>
+  <sl-badge variant="warning" pill pulse>1</sl-badge>
+  <sl-badge variant="danger" pill pulse>1</sl-badge>
+</div>
+
+<style>
+  .badge-pulse sl-badge:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+</style>
