@@ -62,14 +62,17 @@ export default {
         { src: '../../README.md', dest: '.' },
         { src: '../../LICENSE.md', dest: '.' },
         {
-          src: './node_modules/@shoelace-style/shoelace/dist/assets',
-          dest: './public',
+          src: './node_modules/@shoelace-style/shoelace/dist/assets/icons',
+          dest: './assets',
         },
         {
           src: './node_modules/@shoelace-style/shoelace/dist/themes',
-          dest: './public',
+          dest: './assets',
+          exclude: ['**/*.styles.js'],
         },
       ],
     }),
+
+    addon.publicAssets('assets', { exclude: ['**/*.styles.js'] }),
   ],
 };
