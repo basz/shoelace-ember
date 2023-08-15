@@ -39,13 +39,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Setup Chrome
-        run: |
-          add-apt-repository ppa:saiarcot895/chromium-beta
-          apt-get update
-          apt-get -y install chromium-browser
-          chromium-browser --version
-
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
@@ -59,13 +52,6 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           pnpm install --frozen-lockfile
-
-      - name: Install dotenv file
-        run: |
-          # used in test step
-          cp env.dist .env.test
-          # used in build step
-          cp env.dist .env.production
 
       - name: Running tests
         env:
