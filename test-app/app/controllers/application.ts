@@ -72,10 +72,9 @@ export default class ApplicationController extends Controller {
     this.activePanelName = event.detail.name;
 
     const tab = event.target as Element;
-    const panel = tab.querySelector('sl-tab-panel');
+    const panel = tab.querySelector('sl-tab-panel') as HTMLElement;
     if (panel) {
       panel.style.display = 'block';
     }
-    // this.panel?.show(event.detail.name);
   }
 }
