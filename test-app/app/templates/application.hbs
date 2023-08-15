@@ -16,7 +16,7 @@
     size="small"
     {{on "sl-change" this.themeInputChanged}}
     value={{this.theme}}
-    style="display: inline-block; max-width: 150px;"
+    class="inline-block max-w-xs"
   >
     <sl-option value="auto">auto</sl-option>
     <sl-option value="light">light</sl-option>
@@ -28,7 +28,7 @@
     size="small"
     {{on "sl-change" this.languageInputChanged}}
     value={{this.language}}
-    style="display: inline-block; max-width: 150px;"
+    class="inline-block max-w-xs"
   >
     {{#each this.languages as |language|}}
       <sl-option value={{language}}>{{language}}</sl-option>
