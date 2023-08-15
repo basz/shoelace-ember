@@ -39,6 +39,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Setup Chrome
+        run: |
+          add-apt-repository ppa:saiarcot895/chromium-beta
+          apt-get update
+          apt-get -y install chromium-browser
+          chromium-browser --version
+
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
