@@ -38,6 +38,13 @@
 
 <br>
 
+  <sl-alert variant="primary" open closable class="alert-closable">
+    <sl-icon slot="icon" name="info-circle"></sl-icon>
+    You can close this alert any time!
+  </sl-alert>
+
+<br>
+
 <div class="alert-toast">
   <sl-button variant="primary">Primary</sl-button>
   <sl-button variant="success">Success</sl-button>
@@ -74,6 +81,8 @@
     <strong>Your account has been deleted</strong><br />
     We're very sorry to see you go!
   </sl-alert>
+
+
 </div>
 
 <script>
@@ -84,5 +93,14 @@
     const alert = container.querySelector(`sl-alert[variant="${variant}"]`);
 
     button.addEventListener('click', () => alert.toast());
+  });
+</script>
+
+
+
+<script>
+  const alert = document.querySelector('.alert-closable');
+  alert.addEventListener('sl-after-hide', () => {
+    setTimeout(() => (alert.open = true), 2000);
   });
 </script>

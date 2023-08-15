@@ -1,23 +1,33 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    postcssOptions: {
+      compile: {
+        enabled: true,
+        extension: 'scss',
+        parser: require('postcss-scss'),
+        includePaths: [__dirname],
+        // track changes in template, css, scss, and tailwind config files
+        cacheInclude: [/.*\.hbs$/, /.*\.css$/, /.*\.scss$/, /.*\.html/],
+        plugins: [
+          {
+            module: require('autoprefixer'),
+          },
+          {
+            module: require('tailwindcss'),
+            options: {
+              config: './app/styles/tailwind/config.js',
+            },
+          },
+        ],
+      },
+    },
     'ember-cli-babel': { enableTypeScriptTransform: true },
     autoImport: {
       watchDependencies: ['@shoelace-style/ember'],
-      webpack: {
-        // wha? how then...
-        // plugins: [
-        //   new SpriteLoaderPlugin({
-        //     extract: true,
-        //     outputPath: 'public/sprites/',
-        //     publicPath: 'sprites/',
-        //   }),
-        // ],
-      },
     },
   });
 

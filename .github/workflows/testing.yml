@@ -1,0 +1,75 @@
+name: Testing
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-tests:
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
+
+    steps:
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 8.*
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Setup Chrome
+        run: |
+          add-apt-repository ppa:saiarcot895/chromium-beta
+          apt-get update
+          apt-get -y install chromium-browser
+          chromium-browser --version
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Installing Dependencies
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Install dotenv file
+        run: |
+          # used in test step
+          cp env.dist .env.test
+          # used in build step
+          cp env.dist .env.production
+
+      - name: Running tests
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          pnpm run build
+          pnpm run test

@@ -3,67 +3,23 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import { importSync } from '@embroider/macros';
 import { ensureSafeComponent } from '@embroider/util';
+import { inject as service } from '@ember/service';
+import { componentList } from 'test-app/constants';
 
 export default class ApplicationController extends Controller {
-  components = [
-    'alert',
-    'animated-image',
-    'animation',
-    'avatar',
-    'badge',
-    'breadcrumb',
-    'breadcrumb-item',
-    'button',
-    'button-group',
-    'card',
-    'carousel',
-    'carousel-item',
-    'checkbox',
-    'color-picker',
-    'details',
-    'dialog',
-    'divider',
-    'drawer',
-    'dropdown',
-    'format-bytes',
-    'format-date',
-    'format-number',
-    'icon',
-    'icon-button',
-    'image-comparer',
-    'include',
-    'input',
-    'menu',
-    'menu-item',
-    'menu-label',
-    'mutation-observer',
-    'option',
-    'popup',
-    'progress-bar',
-    'progress-ring',
-    'qr-code',
-    'radio',
-    'radio-button',
-    'radio-group',
-    'range',
-    'rating',
-    'relative-time',
-    'resize-observer',
-    'select',
-    'skeleton',
-    'spinner',
-    'split-panel',
-    'switch',
-    'tab',
-    'tab-group',
-    'tab-panel',
-    'tag',
-    'textarea',
-    'tooltip',
-    'tree',
-    'tree-item',
-    'visually-hidden',
-  ];
+  @service shoelace!: any;
+
+  constructor(...args: any[]) {
+    super(...args);
+
+    this.activePanelName = 'alert';
+  }
+
+  get languages() {
+    return this.shoelace.languages;
+  }
+
+  componentList = componentList;
 
   @tracked _activePanelName?: string;
 
@@ -83,6 +39,28 @@ export default class ApplicationController extends Controller {
   }
 
   panel?: any;
+
+  @action
+  themeInputChanged(event: CustomEvent) {
+    const { value } = event.target as HTMLInputElement;
+
+    this.shoelace.theme = value;
+  }
+
+  get theme() {
+    return this.shoelace.theme;
+  }
+
+  get language() {
+    return this.shoelace.language;
+  }
+
+  @action
+  languageInputChanged(event: CustomEvent) {
+    const { value } = event.target as HTMLInputElement;
+
+    this.shoelace.language = value;
+  }
 
   @action
   onInsert(element: HTMLElement) {

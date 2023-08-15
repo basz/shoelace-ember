@@ -3,27 +3,86 @@
 <h2 id="title">@shoelace-style/ember</h2>
 
 <p>
-  This is a demo of the <code>@shoelace-style/ember</code> addon. It includes all of the components and utilities
-  available in the addon, and it's a great way to test and debug the addon locally.
+  This is a demo of the
+  <code>@shoelace-style/ember</code>
+  addon. It includes all of the components and utilities available in the addon,
+  and it's a great way to test and debug the addon locally.
 </p>
 
-<sl-tab-group
-  placement="start"
-  {{did-insert this.onInsert}}
-  {{on "sl-tab-show" this.onShowPanel}}
-  {{on "sl-tab-hide" this.onHidePanel}}
+<div>
+
+  <sl-select
+    label="Theme"
+    size="small"
+    {{on "sl-change" this.themeInputChanged}}
+    value={{this.theme}}
+    style="display: inline-block; max-width: 150px;"
+  >
+    <sl-option value="auto">auto</sl-option>
+    <sl-option value="light">light</sl-option>
+    <sl-option value="dark">dark</sl-option>
+  </sl-select>
+
+  <sl-select
+    label="Language"
+    size="small"
+    {{on "sl-change" this.languageInputChanged}}
+    value={{this.language}}
+    style="display: inline-block; max-width: 150px;"
+  >
+    {{#each this.languages as |language|}}
+      <sl-option value={{language}}>{{language}}</sl-option>
+    {{/each}}
+  </sl-select>
+
+</div>
+
+<br />
+
+<button
+  data-drawer-target="default-sidebar"
+  data-drawer-toggle="default-sidebar"
+  aria-controls="default-sidebar"
+  type="button"
+  class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 >
-  {{#each this.components as |component|}}
-    <sl-tab slot="nav" panel={{component}}>{{component}}</sl-tab>
-  {{/each}}
+  <span class="sr-only">Open sidebar</span>
+  <svg
+    class="w-6 h-6"
+    aria-hidden="true"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clip-rule="evenodd"
+      fill-rule="evenodd"
+      d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+    ></path>
+  </svg>
+</button>
 
-  <sl-tab-panel name={{this.activePanelName}}>
-    <div>
-      <h3>{{this.activePanelName}}</h3>
-      <hr>
+<aside
+  id="default-sidebar"
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  aria-label="Sidebar"
+>
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <ul class="space-y-2 font-medium">
+      {{#each this.componentList as |component|}}
+        <li>
+          <LinkTo
+            @route="component" @model={{component}}
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+          ><span class="ml-3">{{component}}</span></LinkTo>
+        </li>
+      {{/each}}
 
-      <this.activePanelComponent />
-    </div>
-  </sl-tab-panel>
+    </ul>
+  </div>
+</aside>
 
-</sl-tab-group>
+<div class="p-4 sm:ml-64">
+  {{outlet}}
+</div>
+
