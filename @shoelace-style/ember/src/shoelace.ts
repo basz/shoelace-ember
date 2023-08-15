@@ -1,8 +1,75 @@
 import { setBasePath } from '@shoelace-style/shoelace';
 import { tracked } from '@glimmer/tracking';
+import { assert } from '@ember/debug';
 
 export type Theme = 'light' | 'dark';
 export type ThemeOption = Theme | 'auto';
+
+const defaultConfig: ShoelaceConfig = {
+  basePath: '/@shoelace-style/ember',
+  theme: 'light',
+  languages: [],
+  language: 'auto',
+  components: [
+    'alert',
+    'animated-image',
+    'animation',
+    'avatar',
+    'badge',
+    'breadcrumb',
+    'breadcrumb-item',
+    'button',
+    'button-group',
+    'card',
+    'carousel',
+    'carousel-item',
+    'checkbox',
+    'color-picker',
+    'details',
+    'dialog',
+    'divider',
+    'drawer',
+    'dropdown',
+    'format-bytes',
+    'format-date',
+    'format-number',
+    'icon',
+    'icon-button',
+    'image-comparer',
+    'include',
+    'input',
+    'menu',
+    'menu-item',
+    'menu-label',
+    'mutation-observer',
+    'option',
+    'popup',
+    'progress-bar',
+    'progress-ring',
+    'qr-code',
+    'radio',
+    'radio-button',
+    'radio-group',
+    'range',
+    'rating',
+    'relative-time',
+    'resize-observer',
+    'select',
+    'skeleton',
+    'spinner',
+    'split-panel',
+    'switch',
+    'tab',
+    'tab-group',
+    'tab-panel',
+    'tag',
+    'textarea',
+    'tooltip',
+    'tree',
+    'tree-item',
+    'visually-hidden',
+  ],
+};
 
 export class ShoelaceConfig {
   readonly basePath: string;
@@ -13,11 +80,23 @@ export class ShoelaceConfig {
   @tracked theme: ThemeOption;
 
   constructor(config: ShoelaceConfig) {
-    this.basePath = config.basePath;
-    this.theme = config.theme;
-    this.languages = config.languages;
-    this.language = config.language;
-    this.components = config.components;
+    this.basePath = config.basePath ?? defaultConfig.basePath;
+    this.theme = config.theme ?? defaultConfig.theme;
+    this.languages = config.languages ?? defaultConfig.languages;
+    this.language = config.language ?? defaultConfig.language;
+    this.components = config.components ?? defaultConfig.components;
+
+    assert(`Shoelace basePath must be a string`, typeof this.basePath === 'string');
+    assert(`Shoelace basePath must start with a slash`, this.basePath.startsWith('/'));
+    assert(
+      `Shoelace components must all an array of strings`,
+      Array.isArray(this.components) && this.components.every((language: unknown) => typeof language === 'string')
+    );
+    assert(
+      `Shoelace languages must all an array of strings`,
+      Array.isArray(this.languages) && this.languages.every((language: unknown) => typeof language === 'string')
+    );
+    assert(`Shoelace theme must be string and one of ThemeOptions`, typeof this.theme === 'string' && ['auto', 'dark', 'light'].includes(config.theme));
   }
 }
 
