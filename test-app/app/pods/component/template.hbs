@@ -2,8 +2,10 @@
 <div
     class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
   >
-      <h3>{{this.activePanelName}}</h3>
-      <hr />
+      <h3
+      class="mb-4 text-2xl font-extrabold leading-none text-gray-900 dark:text-white"
+    >{{this.activePanelName}}</h3>
 
-      <this.activePanelComponent />
+
+      <this.activePanelComponent class="mt-4"/>
 </div>

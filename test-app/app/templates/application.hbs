@@ -1,41 +1,4 @@
-{{page-title "TestApp"}}
-
-<h2 id="title">@shoelace-style/ember</h2>
-
-<p>
-  This is a demo of the
-  <code>@shoelace-style/ember</code>
-  addon. It includes all of the components and utilities available in the addon,
-  and it's a great way to test and debug the addon locally.
-</p>
-
-<div>
-
-  <sl-select
-    label="Theme"
-    size="small"
-    {{on "sl-change" this.themeInputChanged}}
-    value={{this.theme}}
-    class="inline-block max-w-xs"
-  >
-    <sl-option value="auto">auto</sl-option>
-    <sl-option value="light">light</sl-option>
-    <sl-option value="dark">dark</sl-option>
-  </sl-select>
-
-  <sl-select
-    label="Language"
-    size="small"
-    {{on "sl-change" this.languageInputChanged}}
-    value={{this.language}}
-    class="inline-block max-w-xs"
-  >
-    {{#each this.languages as |language|}}
-      <sl-option value={{language}}>{{language}}</sl-option>
-    {{/each}}
-  </sl-select>
-
-</div>
+{{page-title "@shoelace-style/ember"}}
 
 <br />
 
@@ -72,7 +35,8 @@
       {{#each this.componentList as |component|}}
         <li>
           <LinkTo
-            @route="component" @model={{component}}
+            @route="component"
+            @model={{component}}
             class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
           ><span class="ml-3">{{component}}</span></LinkTo>
         </li>
@@ -83,6 +47,44 @@
 </aside>
 
 <div class="p-4 sm:ml-64">
+  <div class="center">
+    <h1
+      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    >@shoelace-style/ember</h1>
+    <p
+      class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+    >This is a demo of the @shoelace-style/ember addon. It includes all of the
+      components and utilities available in the addon, and it's a great way to
+      test and debug the addon locally.</p>
+    <div>
+
+    </div>
+    <div class="w-full py-3 flex flex-row gap-x-2 place-content-end">
+      <sl-select
+        label="Theme"
+        size="small"
+        {{on "sl-change" this.themeInputChanged}}
+        value={{this.theme}}
+        class="inline-bock max-w-xs"
+      >
+        <sl-option value="auto">auto</sl-option>
+        <sl-option value="light">light</sl-option>
+        <sl-option value="dark">dark</sl-option>
+      </sl-select>
+
+      <sl-select
+        label="Language"
+        size="small"
+        {{on "sl-change" this.languageInputChanged}}
+        value={{this.language}}
+        class="inline-bock max-w-xs"
+      >
+        {{#each this.languages as |language|}}
+          <sl-option value={{language}}>{{language}}</sl-option>
+        {{/each}}
+      </sl-select>
+
+    </div>
+  </div>
   {{outlet}}
 </div>
-

@@ -4,7 +4,7 @@ import { ensureSafeComponent } from '@embroider/util';
 import { tracked } from '@glimmer/tracking';
 
 export default class ComponentController extends Controller {
-  model!: { component_name: string };
+  @tracked model!: { component_name: string };
 
   @tracked _activePanelName?: string;
 
