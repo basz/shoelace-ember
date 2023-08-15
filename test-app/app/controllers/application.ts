@@ -78,7 +78,4 @@ export default class ApplicationController extends Controller {
     }
     // this.panel?.show(event.detail.name);
   }
-
-  @action
-  onHidePanel(event: CustomEvent) {}
 }
