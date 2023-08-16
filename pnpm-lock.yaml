@@ -190,8 +190,8 @@ importers:
         specifier: ^1.13.0
         version: 1.13.0(@glint/template@1.0.2)
       '@embroider/test-setup':
-        specifier: ^1.7.1
-        version: 1.7.1
+        specifier: ^3.0.0
+        version: 3.0.0(@embroider/compat@3.2.0)(@embroider/core@3.2.0)(@embroider/webpack@3.1.4)
       '@embroider/util':
         specifier: ^1.12.0
         version: 1.12.0(@glint/environment-ember-loose@1.0.2)(@glint/template@1.0.2)(ember-source@5.2.0-beta.3)
@@ -2642,12 +2642,26 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/test-setup@1.7.1:
-    resolution: {integrity: sha512-IxZ/ETmWyzRolTGYH4LDMJEEtrS9w6ak+Sc/nxrITechO1IR6A+a15qrxbzR38b3lXRZn4XlNEsJy3+qcq9c6A==}
+  /@embroider/test-setup@3.0.0(@embroider/compat@3.2.0)(@embroider/core@3.2.0)(@embroider/webpack@3.1.4):
+    resolution: {integrity: sha512-JnbcYs2xPDPayfYCMjG5M8t1i3j2sTXt2YT2JeoZ266RtnK6TM50gV6Q15v9wJUhyT4DjjEShKUd0k8v1lBquA==}
     engines: {node: 12.* || 14.* || >= 16}
+    peerDependencies:
+      '@embroider/compat': ^3.0.0
+      '@embroider/core': ^3.0.0
+      '@embroider/webpack': ^3.0.0
+    peerDependenciesMeta:
+      '@embroider/compat':
+        optional: true
+      '@embroider/core':
+        optional: true
+      '@embroider/webpack':
+        optional: true
     dependencies:
+      '@embroider/compat': 3.2.0(@embroider/core@3.2.0)(@glint/template@1.0.2)
+      '@embroider/core': 3.2.0(@glint/template@1.0.2)
+      '@embroider/webpack': 3.1.4(@embroider/core@3.2.0)(webpack@5.88.1)
       lodash: 4.17.21
-      resolve: 1.22.2
+      resolve: 1.22.3
     dev: true
 
   /@embroider/util@1.12.0(@glint/environment-ember-loose@1.0.2)(@glint/template@1.0.2)(ember-source@5.2.0-beta.3):
