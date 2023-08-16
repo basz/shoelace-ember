@@ -23,14 +23,18 @@ Your application use it environment to set some configuration options.
 
 ```js
 shoelace: {
-  basePath: "/@shoelace-style/ember",
-  theme: "light",
-  components: [... list of components]
+  // optional, defaults to  '/@shoelace-style/ember'
+  basePath: '/@shoelace-style/ember',
+  // optional, defaults to 'auto'
+  theme: 'light',
+  // optional, list of languages to include, defaults to auto detected language is also included
+  languages: [],
+  // optional, defaults to auto detected language
+  language: 'auto',
+  // optional, when omitted all components are included
+  components: []
 }
 ```
-
-note: theme is not implemented.
-note: do not set the components options to include all.
 
 ## Contributing
 
