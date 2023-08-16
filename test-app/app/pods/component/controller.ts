@@ -18,7 +18,7 @@ export default class ComponentController extends Controller {
 
   get activePanelComponent() {
     const module: any = importSync(
-      `./../../components/panel/${this.model.component_name}`
+      `./../../components/panel/${this.model.component_name}`,
     );
     return ensureSafeComponent(module.default, this);
   }

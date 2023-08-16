@@ -33,7 +33,7 @@ export default class ApplicationController extends Controller {
 
   get activePanelComponent() {
     const module: any = importSync(
-      `./../components/panel/${this.activePanelName}`
+      `./../components/panel/${this.activePanelName}`,
     );
     return ensureSafeComponent(module.default, this);
   }

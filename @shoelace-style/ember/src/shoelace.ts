@@ -90,11 +90,11 @@ export class ShoelaceConfig {
     assert(`Shoelace basePath must start with a slash`, this.basePath.startsWith('/'));
     assert(
       `Shoelace components must all an array of strings`,
-      Array.isArray(this.components) && this.components.every((language: unknown) => typeof language === 'string')
+      Array.isArray(this.components) && this.components.every((language: unknown) => typeof language === 'string'),
     );
     assert(
       `Shoelace languages must all an array of strings`,
-      Array.isArray(this.languages) && this.languages.every((language: unknown) => typeof language === 'string')
+      Array.isArray(this.languages) && this.languages.every((language: unknown) => typeof language === 'string'),
     );
     assert(`Shoelace theme must be string and one of ThemeOptions`, typeof this.theme === 'string' && ['auto', 'dark', 'light'].includes(config.theme));
   }
