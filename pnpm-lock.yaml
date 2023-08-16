@@ -67,8 +67,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3(@babel/core@7.17.0)(rollup@3.21.8)
       '@tsconfig/ember':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.0.0
+        version: 3.0.0
       '@types/ember':
         specifier: ^4.0.4
         version: 4.0.4(@babel/core@7.17.0)
@@ -3618,10 +3618,6 @@ packages:
   /@tootallnate/once@1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /@tsconfig/ember@2.0.0:
-    resolution: {integrity: sha512-RzbDYYcjxVdG8Ki0xe99HN3+nHTZe6EBgw6N7B3yup7QogVFQQxA9nY7X80j1XzF15xqetwWiYfAjv5lkkp0/A==}
     dev: true
 
   /@tsconfig/ember@3.0.0:
