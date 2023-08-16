@@ -74,7 +74,7 @@
     "eslint-plugin-ember": "^11.6.0",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^2.5.1",
+    "prettier": "^3.0.0",
     "rollup": "^3.21.8",
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^5.0.4"
