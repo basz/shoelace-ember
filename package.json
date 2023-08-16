@@ -19,7 +19,7 @@
     "@release-it-plugins/lerna-changelog": "^6.0.0",
     "concurrently": "^8.0.0",
     "prettier": "^3.0.0",
-    "release-it": "^15.5.0"
+    "release-it": "^16.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
