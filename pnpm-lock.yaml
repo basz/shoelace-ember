@@ -211,7 +211,7 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@shoelace-style/ember':
-        specifier: ^0.0.0
+        specifier: workspace:*
         version: link:../@shoelace-style/ember
       '@tsconfig/ember':
         specifier: ^3.0.0

@@ -41,7 +41,7 @@
     "@glimmer/tracking": "^1.1.2",
     "@glint/environment-ember-loose": "^1.0.2",
     "@glint/template": "^1.0.2",
-    "@shoelace-style/ember": "^0.0.0",
+    "@shoelace-style/ember": "workspace:*",
     "@tsconfig/ember": "^3.0.0",
     "@types/ember__application": "^4.0.6",
     "@types/ember__array": "^4.0.4",
