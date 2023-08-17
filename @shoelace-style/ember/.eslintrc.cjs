@@ -18,6 +18,7 @@ module.exports = {
       files: ['**/*.ts'],
       extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
       rules: {
+        '@typescript-eslint/no-explicit-any': 'warn',
         // Add any custom rules here
       },
     },
