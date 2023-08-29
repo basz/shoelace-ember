@@ -42,6 +42,7 @@
     "@glint/environment-ember-loose": "^1.1.0",
     "@glint/template": "^1.1.0",
     "@shoelace-style/ember": "workspace:*",
+    "@tailwindcss/typography": "^0.5.9",
     "@tsconfig/ember": "^3.0.0",
     "@types/ember": "^4.0.4",
     "@types/ember-data": "^4.4.11",

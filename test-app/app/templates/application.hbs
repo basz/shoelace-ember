@@ -1,90 +1,259 @@
 {{page-title "@shoelace-style/ember"}}
-
-<br />
-
-<button
-  data-drawer-target="default-sidebar"
-  data-drawer-toggle="default-sidebar"
-  aria-controls="default-sidebar"
-  type="button"
-  class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+<header
+  class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800"
 >
-  <span class="sr-only">Open sidebar</span>
-  <svg
-    class="w-6 h-6"
-    aria-hidden="true"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
+  <div
+    class="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl lg:px-4"
   >
-    <path
-      clip-rule="evenodd"
-      fill-rule="evenodd"
-      d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
-    ></path>
-  </svg>
-</button>
-
-<aside
-  id="default-sidebar"
-  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-  aria-label="Sidebar"
->
-  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-    <ul class="space-y-2 font-medium">
-      {{#each this.componentList as |component|}}
-        <li>
-          <LinkTo
-            @route="component"
-            @model={{component}}
-            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-          ><span class="ml-3">{{component}}</span></LinkTo>
-        </li>
-      {{/each}}
-
-    </ul>
-  </div>
-</aside>
-
-<div class="p-4 sm:ml-64">
-  <div class="center">
-    <h1
-      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
-    >@shoelace-style/ember</h1>
-    <p
-      class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
-    >This is a demo of the @shoelace-style/ember addon. It includes all of the
-      components and utilities available in the addon, and it's a great way to
-      test and debug the addon locally.</p>
-    <div>
-
-    </div>
-    <div class="w-full py-3 flex flex-row gap-x-2 place-content-end">
-      <sl-select
-        label="Theme"
-        size="small"
-        {{on "sl-change" this.themeInputChanged}}
-        value={{this.theme}}
-        class="inline-bock max-w-xs"
+    <div class="flex items-center">
+      <button
+        id="toggleSidebarMobile"
+        aria-expanded="true"
+        aria-controls="sidebar"
+        data-drawer-target="sidebar"
+        data-drawer-show="sidebar"
+        class="p-2 mr-2 text-gray-500 rounded cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
       >
-        <sl-option value="auto">auto</sl-option>
-        <sl-option value="light">light</sl-option>
-        <sl-option value="dark">dark</sl-option>
-      </sl-select>
+        <svg
+          id="toggleSidebarMobileHamburger"
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        ><path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path></svg>
+        <svg
+          id="toggleSidebarMobileClose"
+          class="hidden w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        ><path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path></svg>
+      </button>
 
-      <sl-select
-        label="Language"
-        size="small"
-        {{on "sl-change" this.languageInputChanged}}
-        value={{this.language}}
-        class="inline-bock max-w-xs"
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex">
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >Ember Shoelace</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-x-2">
+
+
+          <sl-select
+            size="small"
+            {{on "sl-change" this.languageInputChanged}}
+            value={{this.language}}
+            class="inline-bock w-24 pr-2"
+          >
+            {{#each this.languages as |language|}}
+              <sl-option value={{language}}>{{language}}</sl-option>
+            {{/each}}
+          </sl-select>
+
+
+      <a
+        href="https://github.com/basz/shoelace-ember"
+        class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
       >
-        {{#each this.languages as |language|}}
-          <sl-option value={{language}}>{{language}}</sl-option>
-        {{/each}}
-      </sl-select>
+        <svg
+          class="w-[1.1rem] h-[1.1rem]"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span class="sr-only">View on Github</span>
+      </a>
 
+      <sl-tooltip content={{concat this.shoelace.theme " mode"}}>
+        <button
+          type="button"
+          class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+          {{on "click" this.themeInputChanged}}
+        >
+          {{#if this.lightTheme}}
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 20"
+            >
+              <path
+                d="M10 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-11a1 1 0 0 0 1-1V1a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm0 12a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1ZM4.343 5.757a1 1 0 0 0 1.414-1.414L4.343 2.929a1 1 0 0 0-1.414 1.414l1.414 1.414Zm11.314 8.486a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM4 10a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm15-1h-2a1 1 0 1 0 0 2h2a1 1 0 0 0 0-2ZM4.343 14.243l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414a1 1 0 0 0-1.414-1.414ZM14.95 6.05a1 1 0 0 0 .707-.293l1.414-1.414a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 .707 1.707Z"
+              ></path>
+            </svg>
+          {{else}}
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"
+              ></path>
+            </svg>
+          {{/if}}
+          <span class="sr-only">Toggle theme mode</span>
+        </button>
+      </sl-tooltip>
     </div>
   </div>
-  {{outlet}}
+</header>
+
+<div class="w-full px-4 mx-auto max-w-7xl">
+  <div class="lg:flex">
+
+    <aside
+      id="sidebar"
+      class="fixed inset-0 z-20 flex-none hidden h-full w-72 lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-48 lg:block"
+      aria-labelledby="sidebar-label"
+    >
+      <h4 id="sidebar-label" class="sr-only">Browse docs</h4>
+      <div
+        id="navWrapper"
+        class="overflow-y-auto z-20 h-full bg-white scrolling-touch max-w-2xs lg:h-[calc(100vh-3rem)] lg:block lg:sticky top:24 lg:top-28 dark:bg-gray-900 lg:mr-0"
+      >
+        <nav
+          id="nav"
+          class="pt-16 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20 sticky?lg:h-(screen-18)"
+          aria-label="Docs navigation"
+        ><ul class="mb-0 list-unstyled">
+            <li class="mt-8">
+              <h5
+                class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white"
+              >Getting started</h5>
+              <ul class="py-1 list-unstyled fw-normal small">
+                <li>
+                  <LinkTo
+                    @route="introduction"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Introduction
+                  </LinkTo>
+                </li>
+                <li>
+                  <LinkTo
+                    @route="quick-start"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Quick start
+                  </LinkTo>
+                </li>
+                <li>
+                  <LinkTo
+                    @route="changelog"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Changelog
+                  </LinkTo>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mt-8">
+              <h5
+                class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white"
+              >Customize</h5>
+              <ul class="py-1 list-unstyled fw-normal small">
+                <li>
+                  <LinkTo
+                    @route="configuration"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Configuration
+                  </LinkTo>
+                </li>
+                <li>
+                  <LinkTo
+                    @route="dark-mode"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Dark mode
+                  </LinkTo>
+                </li>
+                <li>
+                  <LinkTo
+                    @route="localization"
+                    class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Localization
+                  </LinkTo>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mt-8">
+              <h5
+                class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white"
+              >
+                Components
+              </h5>
+
+              <ul class="py-1 list-unstyled fw-normal small">
+                {{#each this.componentList as |component|}}
+                  <li>
+                    <LinkTo
+                      @route="components.component"
+                      @model={{component}}
+                      class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white"
+                    >
+                      {{component}}
+                    </LinkTo>
+                  </li>
+                {{/each}}
+
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </aside>
+
+    <div
+      class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/60"
+      id="sidebarBackdrop"
+    ></div>
+
+    <main
+      id="content-wrapper"
+      class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible"
+    >
+      <div class="flex w-full">
+
+        <div
+          class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb:12 xl:pb-24 lg:pb-16"
+        >
+
+          <div id="mainContent">
+            {{outlet}}
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
 </div>

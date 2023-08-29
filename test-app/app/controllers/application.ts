@@ -5,9 +5,10 @@ import { importSync } from '@embroider/macros';
 import { ensureSafeComponent } from '@embroider/util';
 import { inject as service } from '@ember/service';
 import { componentList } from 'test-app/constants';
+import type ShoelaceService from '@shoelace-style/ember/services/shoelace';
 
 export default class ApplicationController extends Controller {
-  @service shoelace!: any;
+  @service declare shoelace: ShoelaceService;
 
   constructor(...args: any[]) {
     super(...args);
@@ -22,6 +23,7 @@ export default class ApplicationController extends Controller {
   componentList = componentList;
 
   @tracked _activePanelName?: string;
+  @tracked lightTheme = true;
 
   get activePanelName(): string {
     return this._activePanelName ?? 'alert';
@@ -41,10 +43,43 @@ export default class ApplicationController extends Controller {
   panel?: any;
 
   @action
-  themeInputChanged(event: CustomEvent) {
-    const { value } = event.target as HTMLInputElement;
+  themeInputChanged() {
+    const availableModes = ['light', 'dark', 'auto'];
+    const nextMode =
+      availableModes[(availableModes.indexOf(this.shoelace.theme) + 1) % 3]!;
 
-    this.shoelace.theme = value;
+    // set theme in shoelace service
+    this.shoelace.theme = nextMode;
+
+    // set theme for tailwind css
+    ((theme: string) => {
+      if (theme === 'auto') {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })(nextMode);
+
+    // set theme for ui
+    ((theme: string) => {
+      if (theme === 'auto') {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+
+      this.lightTheme = theme === 'light';
+    })(nextMode);
   }
 
   get theme() {

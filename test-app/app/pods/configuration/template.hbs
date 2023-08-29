@@ -1,0 +1,74 @@
+<div class="prose lg:prose-lg dark:prose-invert">
+  <h1>
+    Configuration
+  </h1>
+
+  <p>
+    You may configure some settings for Ember Shoelace in your
+    <code>environment.js</code>
+    file. Create an 'ember-shoelace' object in your app's config/environment.js
+    file and add any of the following properties:
+  </p>
+
+  <h4>components</h4>
+  <p>
+    An array of shoelace components to include in your build. By default, all
+    components are included. If you only need a few components, you can specify
+    them here to reduce your bundle size.
+  </p>
+
+  <pre><code>ENV['ember-shoelace'] = { components: ['sl-button', 'sl-input'] };</code></pre>
+
+  <h4>languages</h4>
+  <p>
+    An array of
+    <a
+      href="https://shoelace.style/getting-started/localization#available-translations"
+    >supported shoelace languages</a>
+    to be included in your build. By default, only 'en' is included. If you need
+    more languages you can specify them here.
+  </p>
+
+  <pre><code>ENV['ember-shoelace'] = { languages: ['en', 'nl'] };</code></pre>
+
+  <h4>language</h4>
+  <p>
+    The language to be used inside shoelace components. By default this is set
+    to 'auto'.
+  </p>
+
+  <pre><code>ENV['ember-shoelace'] = { language: 'nl' };</code></pre>
+
+  <p>When set to
+    <i>auto</i>
+    the shoelace service will try to detect a suitable language from the html
+    tag or the browser. If none can be found 'en' will be used.</p>
+
+  <pre><code>&#x3C;html lang=&#x27;nl&#x27;&#x3E;</code></pre>
+
+  <p class="text-sm">when no lang attribute is present</p>
+
+  <pre><code>navigator.languages[0]</code></pre>
+
+  <h4>theme</h4>
+  <p>
+    A string of to be used to theme any shoelace component. By default this is
+    set to 'auto'. Using 'auto' will use 'prefers-color-scheme' of the browser
+    and a listener for changes is added. Other options are 'light' and 'dark'.
+  </p>
+
+  <pre><code>ENV['ember-shoelace'] = { theme: 'light' };</code></pre>
+
+  <p class="text-sm">only affects shoelace components. Other parts of your
+    application must be handled by your application.</p>
+
+  <h4>basePath</h4>
+
+  <p>
+    A string to be used as the base path for the shoelace assets. By default
+    this is set to '/@shoelace-style/ember'. You will probably not need to
+    change this.
+  </p>
+
+  <pre><code>ENV['ember-shoelace'] = { basePath: '/@shoelace-style/ember' };</code></pre>
+</div>

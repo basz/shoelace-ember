@@ -1,5 +1,5 @@
 import Service from '@ember/service';
-import { ShoelaceConfig, Theme, ThemeOption, applyShoelaceTheme, setupShoelace } from '../shoelace.ts';
+import { ShoelaceConfig, applyShoelaceTheme, setupShoelace } from '../index.ts';
 
 export default class ShoelaceService extends Service {
   private readonly config: ShoelaceConfig;
@@ -8,7 +8,7 @@ export default class ShoelaceService extends Service {
     super(...args);
 
     // setup / assert configuration
-    const config: ShoelaceConfig = new ShoelaceConfig(owner.resolveRegistration('config:environment')['shoelace'] ?? {});
+    const config: ShoelaceConfig = new ShoelaceConfig(owner.resolveRegistration('config:environment')['ember-shoelace'] ?? {});
 
     // when 'auto' as language is set, add all languages from navigator.languages
     // attempt to get language from document.documentElement.lang or navigator.languages[0]
@@ -48,8 +48,8 @@ export default class ShoelaceService extends Service {
     return this.config.languages;
   }
 
-  set theme(theme: ThemeOption) {
-    const colorScheme: Theme = theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme;
+  set theme(theme: string) {
+    const colorScheme: string = theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme;
 
     applyShoelaceTheme(colorScheme);
 

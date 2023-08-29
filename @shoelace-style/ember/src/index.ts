@@ -2,9 +2,6 @@ import { setBasePath } from '@shoelace-style/shoelace';
 import { tracked } from '@glimmer/tracking';
 import { assert } from '@ember/debug';
 
-export type Theme = 'light' | 'dark';
-export type ThemeOption = Theme | 'auto';
-
 const defaultConfig: ShoelaceConfig = {
   basePath: '/@shoelace-style/ember',
   theme: 'light',
@@ -77,7 +74,7 @@ export class ShoelaceConfig {
   readonly components: string[];
 
   @tracked language: string;
-  @tracked theme: ThemeOption;
+  @tracked theme: string;
 
   constructor(config: ShoelaceConfig) {
     this.basePath = config.basePath ?? defaultConfig.basePath;
@@ -107,7 +104,7 @@ export function setupShoelace(config: ShoelaceConfig) {
   setupTheme(config);
 }
 
-export function applyShoelaceTheme(theme: Theme) {
+export function applyShoelaceTheme(theme: string) {
   switch (theme) {
     case 'light':
       document.documentElement.classList.remove('sl-theme-dark');

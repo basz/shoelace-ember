@@ -20,7 +20,7 @@ module.exports = function (environment) {
       // when it is created
     },
 
-    shoelace: {
+    'ember-shoelace': {
       // basePath: '/@shoelace-style/ember', // optional, defaults '/@shoelace-style/ember'
       // components: null, // optional, all components are included into the build
       languages: ['en', 'fr'], // optional, only 'en' is included into the build

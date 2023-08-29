@@ -7,11 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    // require('@tailwindcss/typography')(),
-    // require('@tailwindcss/aspect-ratio'),
-    // require('tailwindcss-animate'),
-    require('flowbite/plugin'),
-    // require('rippleui'),
-  ],
+  plugins: [require('@tailwindcss/typography')(), require('flowbite/plugin')],
 };

@@ -7,5 +7,14 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('component', { path: '/:component_name' });
+  this.route('introduction', { path: '/' });
+  this.route('quick-start');
+  this.route('configuration');
+  this.route('changelog');
+  this.route('dark-mode');
+  this.route('localization');
+
+  this.route('components', function () {
+    this.route('component', { path: '/:component_name' });
+  });
 });
