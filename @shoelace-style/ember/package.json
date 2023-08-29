@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.6",
-    "@shoelace-style/shoelace": "^2.7.0"
+    "@shoelace-style/shoelace": "^2.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
