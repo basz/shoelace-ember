@@ -39,13 +39,18 @@
       "@release-it-plugins/workspaces": true
     },
     "git": {
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "commitMessage": "chore(release): ${version}",
+      "requireBranch": "main"
     },
     "github": {
       "release": true,
       "tokenRef": "GITHUB_AUTH"
     },
-    "npm": false
+    "npm": false,
+    "hooks": {
+      "before:release": "cp CHANGELOG.md test-app/public/CHANGELOG.md && git add ."
+    }
   },
   "packageManager": "pnpm@8.8.0"
 }

@@ -113,7 +113,7 @@
     "qunit-dom": "^2.0.0",
     "qunit": "^2.19.4",
     "sass": "^1.66.0",
-    "shoelace-ember": "0.0.9",
+    "shoelace-ember": "workspace:*",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-prettier": "^4.0.2",
     "stylelint": "^15.10.3",
