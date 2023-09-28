@@ -1,6 +1,6 @@
-@import "/shoelace-ember/assets/themes/light.css";
+@import "@shoelace-style/shoelace/dist/themes/light.css";
  /* (prefers-color-scheme:light); */
-@import "/shoelace-ember/assets/themes/dark.css";
+@import "@shoelace-style/shoelace/dist/themes/dark.css";
 /* (prefers-color-scheme:dark); */
 
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
