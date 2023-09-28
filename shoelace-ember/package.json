@@ -31,8 +31,7 @@
     "prepack": "rollup --config"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.8.6",
-    "@shoelace-style/shoelace": "^2.8.0"
+    "@embroider/addon-shim": "^1.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -78,6 +77,9 @@
     "rollup": "^3.28.0",
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@shoelace-style/shoelace": "^2.9.0"
   },
   "publishConfig": {
     "access": "public",
