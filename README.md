@@ -23,8 +23,8 @@ Your application use it environment to set some configuration options.
 
 ```js
 shoelace: {
-  // optional, defaults to  '/@shoelace-style/ember'
-  basePath: '/@shoelace-style/ember',
+  // optional, defaults to  '/shoelace-ember'
+  basePath: '/shoelace-ember',
   // optional, defaults to 'auto'
   theme: 'light',
   // optional, list of languages to include, defaults to auto detected language is also included

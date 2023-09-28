@@ -3,7 +3,7 @@ import { tracked } from '@glimmer/tracking';
 import { assert } from '@ember/debug';
 
 const defaultConfig: ShoelaceConfig = {
-  basePath: '/@shoelace-style/ember',
+  basePath: '/shoelace-ember',
   theme: 'light',
   languages: [],
   language: 'auto',
