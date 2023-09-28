@@ -56,10 +56,10 @@ export default {
       targets: [
         { src: '../../README.md', dest: '.' },
         { src: '../../LICENSE.md', dest: '.' },
-        {
-          src: './node_modules/@shoelace-style/shoelace/dist/assets/icons',
-          dest: './assets',
-        },
+        // {
+        //   src: './node_modules/@shoelace-style/shoelace/dist/assets/icons',
+        //   dest: './assets',
+        // },
         {
           src: './node_modules/@shoelace-style/shoelace/dist/themes',
           dest: './assets',
