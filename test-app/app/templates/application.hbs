@@ -7,6 +7,7 @@
   >
     <div class="flex items-center">
       <button
+        type="button"
         id="toggleSidebarMobile"
         aria-expanded="true"
         aria-controls="sidebar"
@@ -49,18 +50,16 @@
 
     <div class="flex items-center gap-x-2">
 
-
-          <sl-select
-            size="small"
-            {{on "sl-change" this.languageInputChanged}}
-            value={{this.language}}
-            class="inline-bock w-24 pr-2"
-          >
-            {{#each this.languages as |language|}}
-              <sl-option value={{language}}>{{language}}</sl-option>
-            {{/each}}
-          </sl-select>
-
+      <sl-select
+        size="small"
+        {{on "sl-change" this.languageInputChanged}}
+        value={{this.language}}
+        class="inline-bock w-24 pr-2"
+      >
+        {{#each this.languages as |language|}}
+          <sl-option value={{language}}>{{language}}</sl-option>
+        {{/each}}
+      </sl-select>
 
       <a
         href="https://github.com/basz/shoelace-ember"

@@ -9,8 +9,8 @@ export default class ComponentController extends Controller {
   @tracked model!: { component_name: string };
   @tracked _activePanelName?: string;
 
-  constructor() {
-    super(...arguments);
+  constructor(...args: any[]) {
+    super(...args);
 
     initFlowbite();
   }
