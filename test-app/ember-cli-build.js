@@ -27,7 +27,7 @@ module.exports = function (defaults) {
     },
     'ember-cli-babel': { enableTypeScriptTransform: true },
     autoImport: {
-      watchDependencies: ['@shoelace-style/ember'],
+      watchDependencies: ['shoelace-ember'],
     },
   });
 

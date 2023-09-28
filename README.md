@@ -1,4 +1,4 @@
-# @shoelace-style/ember
+# shoelace-ember
 
 Proof of concept addon which integrates [shoelace](https://shoelace.style/) into an ember application.
 
@@ -10,7 +10,7 @@ Proof of concept addon which integrates [shoelace](https://shoelace.style/) into
 ## Installation
 
 ```
-ember install @shoelace-style/ember
+ember install shoelace-ember
 ```
 
 ## Usage

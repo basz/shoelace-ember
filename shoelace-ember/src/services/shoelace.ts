@@ -8,7 +8,7 @@ export default class ShoelaceService extends Service {
     super(...args);
 
     // setup / assert configuration
-    const config: ShoelaceConfig = new ShoelaceConfig(owner.resolveRegistration('config:environment')['ember-shoelace'] ?? {});
+    const config: ShoelaceConfig = new ShoelaceConfig(owner.resolveRegistration('config:environment')['shoelace-ember'] ?? {});
 
     // when 'auto' as language is set, add all languages from navigator.languages
     // attempt to get language from document.documentElement.lang or navigator.languages[0]

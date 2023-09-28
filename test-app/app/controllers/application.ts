@@ -5,7 +5,7 @@ import { importSync } from '@embroider/macros';
 import { ensureSafeComponent } from '@embroider/util';
 import { inject as service } from '@ember/service';
 import { componentList } from 'test-app/constants';
-import type ShoelaceService from '@shoelace-style/ember/services/shoelace';
+import type ShoelaceService from '../../../@shoelace-style/shoelace-ember/declarations/services/shoelace';
 
 export default class ApplicationController extends Controller {
   @service declare shoelace: ShoelaceService;

@@ -3,7 +3,7 @@
 ## Installation
 
 - `git clone <repository-url>`
-- `cd @shoelace-style/ember`
+- `cd shoelace-ember`
 - `pnpm install`
 
 ## Linting
@@ -13,7 +13,7 @@
 
 ## Building the addon
 
-- `cd @shoelace-style/ember`
+- `cd shoelace-ember`
 - `pnpm build`
 
 ## Running tests

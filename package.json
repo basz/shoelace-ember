@@ -1,17 +1,22 @@
 {
-  "name": "@shoelace-style/ember",
+  "name": "shoelace-ember",
   "version": "0.0.2",
   "private": true,
   "repository": "https://github.com/basz/shoelace-ember",
   "license": "MIT",
-  "author": "",
+  "author": "Bas Kamer",
+  "description": "Addon that integrates [shoelace](https://shoelace.style/) into an ember application.",
+  "bugs": {
+    "url": "https://github.com/basz/shoelace-ember/issues"
+  },
+  "homepage": "https://github.com/basz/shoelace-ember#readme",
   "scripts": {
-    "build": "pnpm --filter @shoelace-style/ember build",
+    "build": "pnpm --filter shoelace-ember build",
     "lint": "pnpm --filter '*' lint",
     "lint:fix": "pnpm --filter '*' lint:fix",
     "prepare": "pnpm build",
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
-    "start:addon": "pnpm --filter @shoelace-style/ember start --no-watch.clearScreen",
+    "start:addon": "pnpm --filter shoelace-ember start --no-watch.clearScreen",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test"
   },
