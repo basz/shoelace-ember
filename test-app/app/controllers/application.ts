@@ -14,6 +14,7 @@ export default class ApplicationController extends Controller {
     super(...args);
 
     this.activePanelName = 'alert';
+    this.setTheme(this.shoelace.theme);
   }
 
   get languages() {
@@ -23,7 +24,7 @@ export default class ApplicationController extends Controller {
   componentList = componentList;
 
   @tracked _activePanelName?: string;
-  @tracked lightTheme = true;
+  @tracked lightTheme?: string;
 
   get activePanelName(): string {
     return this._activePanelName ?? 'alert';
@@ -48,6 +49,10 @@ export default class ApplicationController extends Controller {
     const nextMode =
       availableModes[(availableModes.indexOf(this.shoelace.theme) + 1) % 3]!;
 
+    this.setTheme(nextMode);
+  }
+
+  private setTheme(nextMode: string) {
     // set theme in shoelace service
     this.shoelace.theme = nextMode;
 
