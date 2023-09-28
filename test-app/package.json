@@ -1,6 +1,6 @@
 {
   "name": "test-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Test app for @shoelace-style/ember addon",
   "repository": "",
@@ -41,7 +41,7 @@
     "@glimmer/tracking": "^1.1.2",
     "@glint/environment-ember-loose": "^1.1.0",
     "@glint/template": "^1.1.0",
-    "@shoelace-style/ember": "0.0.1",
+    "@shoelace-style/ember": "0.0.2",
     "@tailwindcss/typography": "^0.5.9",
     "@tsconfig/ember": "^3.0.0",
     "@types/ember": "^4.0.4",
