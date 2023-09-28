@@ -94,10 +94,6 @@
       "./index.js": "./dist/_app_/index.js",
       "./instance-initializers/shoelace.js": "./dist/_app_/instance-initializers/shoelace.js",
       "./services/shoelace.js": "./dist/_app_/services/shoelace.js"
-    },
-    "public-assets": {
-      "./assets/themes/dark.css": "/shoelace-ember/assets/themes/dark.css",
-      "./assets/themes/light.css": "/shoelace-ember/assets/themes/light.css"
     }
   },
   "exports": {

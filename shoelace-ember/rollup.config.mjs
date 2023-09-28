@@ -68,6 +68,6 @@ export default {
       ],
     }),
 
-    addon.publicAssets('assets', { exclude: ['**/*.styles.js'] }),
+    //addon.publicAssets('assets', { exclude: ['**/*.styles.js'] }),
   ],
 };
