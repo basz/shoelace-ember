@@ -50,6 +50,10 @@
 
     <div class="flex items-center gap-x-2">
 
+      <span class="text-gray-500 inline-flex dark:text-gray-400 text-sm px-5">
+        v{{app-version versionOnly=true}}
+      </span>
+
       <sl-select
         size="small"
         {{on "sl-change" this.languageInputChanged}}
