@@ -49,6 +49,7 @@
     },
     "npm": false,
     "hooks": {
+      "after:bump": "pnpm i",
       "before:release": "cp CHANGELOG.md test-app/public/CHANGELOG.md && git add ."
     }
   },
