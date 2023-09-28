@@ -431,7 +431,7 @@ importers:
         specifier: ^1.66.0
         version: 1.66.0
       shoelace-ember:
-        specifier: 0.0.10
+        specifier: 0.1.0
         version: link:../shoelace-ember
       stylelint:
         specifier: ^15.10.3
