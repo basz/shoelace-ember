@@ -93,7 +93,7 @@ export class ShoelaceConfig {
       `Shoelace languages must all an array of strings`,
       Array.isArray(this.languages) && this.languages.every((language: unknown) => typeof language === 'string'),
     );
-    assert(`Shoelace theme must be string and one of ThemeOptions`, typeof this.theme === 'string' && ['auto', 'dark', 'light'].includes(config.theme));
+    assert(`Shoelace theme must be string and one of ThemeOptions`, typeof this.theme === 'string' && ['auto', 'dark', 'light'].includes(this.theme));
   }
 }
 
