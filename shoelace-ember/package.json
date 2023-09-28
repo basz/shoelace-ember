@@ -1,6 +1,6 @@
 {
   "name": "shoelace-ember",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [
     "ember-addon"
