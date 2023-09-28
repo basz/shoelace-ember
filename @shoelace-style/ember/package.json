@@ -80,6 +80,7 @@
     "typescript": "^5.1.6"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "ember": {
