@@ -2,7 +2,7 @@
   "name": "@shoelace-style/ember",
   "version": "0.0.0",
   "private": true,
-  "repository": "",
+  "repository": "https://github.com/basz/shoelace-ember",
   "license": "MIT",
   "author": "",
   "scripts": {
