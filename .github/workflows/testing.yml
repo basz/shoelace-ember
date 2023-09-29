@@ -9,8 +9,7 @@ on:
 
 jobs:
   run-tests:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Setup NodeJS
