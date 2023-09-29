@@ -24,7 +24,7 @@ export default class ApplicationController extends Controller {
   componentList = componentList;
 
   @tracked _activePanelName?: string;
-  @tracked lightTheme?: string;
+  @tracked lightTheme?: boolean;
 
   get activePanelName(): string {
     return this._activePanelName ?? 'alert';
