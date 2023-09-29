@@ -1,6 +1,7 @@
 import { setBasePath } from '@shoelace-style/shoelace';
 import { tracked } from '@glimmer/tracking';
 import { assert } from '@ember/debug';
+import './style.css';
 
 const defaultConfig: ShoelaceConfig = {
   basePath: '/shoelace-ember',
@@ -357,8 +358,6 @@ function setupComponents({ components }: { components: string[] }) {
     }
   });
 }
-
-import './style.css';
 
 function setupTheme(config: ShoelaceConfig) {
   const boundThemeChanged = themeChanged.bind(config);
