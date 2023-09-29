@@ -5,7 +5,7 @@
   "repository": "https://github.com/basz/shoelace-ember",
   "license": "MIT",
   "author": "Bas Kamer",
-  "description": "Addon that integrates [shoelace](https://shoelace.style/) into an ember application.",
+  "description": "Addon that integrates [shoelace](https://shoelace.style/) into your EmberJS application.",
   "bugs": {
     "url": "https://github.com/basz/shoelace-ember/issues"
   },

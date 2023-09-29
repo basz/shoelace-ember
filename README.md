@@ -1,6 +1,6 @@
 # shoelace-ember
 
-Proof of concept addon which integrates [shoelace](https://shoelace.style/) into an ember application.
+Addon that integrates [shoelace](https://shoelace.style/) into your EmberJS application.
 
 ## Compatibility
 
@@ -19,10 +19,10 @@ After installation you should be able to use any shoelace component. For detaile
 
 ## Configuration
 
-Your application use it environment to set some configuration options.
+You may set some configuration options via the environment file.
 
 ```js
-shoelace: {
+'shoelace-ember': {
   // optional, defaults to  '/shoelace-ember'
   basePath: '/shoelace-ember',
   // optional, defaults to 'auto'
