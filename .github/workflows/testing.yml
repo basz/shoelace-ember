@@ -24,13 +24,12 @@ jobs:
           version: 8.*
           run_install: false
 
-      - name: Setup Chrome
-        run: |
-          add-apt-repository ppa:saiarcot895/chromium-beta
-          apt-get update
-          apt-get -y install chromium-browser
-          chromium-browser --version
-        if: contains(${{ runner.name }}, "GitHub Actions") === false
+      # - name: Setup Chrome
+      #   run: |
+      #     add-apt-repository ppa:saiarcot895/chromium-beta
+      #     apt-get update
+      #     apt-get -y install chromium-browser
+      #     chromium-browser --version
 
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.8.0
