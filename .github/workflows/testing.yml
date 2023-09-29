@@ -46,8 +46,6 @@ jobs:
           pnpm install --frozen-lockfile
 
       - name: Running tests
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           pnpm run build
-          pnpm run test
+          DEBUG=* pnpm run test
