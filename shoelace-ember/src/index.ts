@@ -459,3 +459,5 @@ function setupLanguages({ languages }: { languages: string[] }): string[] {
 
   return languages.filter((language) => !failedLanguages.includes(language));
 }
+
+export default {};
