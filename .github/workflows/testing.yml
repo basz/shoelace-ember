@@ -31,21 +31,14 @@ jobs:
       #     apt-get -y install chromium-browser
       #     chromium-browser --version
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
-
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Installing Dependencies
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           pnpm install --frozen-lockfile
 
       - name: Running tests
         run: |
           pnpm run build
-          DEBUG=* pnpm run test
+          pnpm run test
