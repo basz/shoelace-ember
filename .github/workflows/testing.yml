@@ -41,6 +41,4 @@ jobs:
       - name: Running tests
         run: |
           pnpm run build
-          cd test-app
-          pnpm run lint
-          pnpm run test:ember
+          pnpm run test
