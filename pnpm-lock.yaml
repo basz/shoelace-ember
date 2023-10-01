@@ -73,55 +73,55 @@ importers:
         specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__application':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__array':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__component':
-        specifier: ^4.0.18
+        specifier: 4.0.18
         version: 4.0.18(@babel/core@7.23.0)
       '@types/ember__controller':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__debug':
-        specifier: ^4.0.5
+        specifier: 4.0.5
         version: 4.0.5(@babel/core@7.23.0)
       '@types/ember__engine':
-        specifier: ^4.0.7
+        specifier: 4.0.7
         version: 4.0.7(@babel/core@7.23.0)
       '@types/ember__error':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__object':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__owner':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6
       '@types/ember__polyfills':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__routing':
-        specifier: ^4.0.16
+        specifier: 4.0.16
         version: 4.0.16(@babel/core@7.23.0)
       '@types/ember__runloop':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__service':
-        specifier: ^4.0.5
+        specifier: 4.0.5
         version: 4.0.5(@babel/core@7.23.0)
       '@types/ember__string':
-        specifier: ^3.0.11
+        specifier: 3.0.11
         version: 3.0.11
       '@types/ember__template':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__test':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3(@babel/core@7.23.0)
       '@types/ember__utils':
-        specifier: ^4.0.4
+        specifier: 4.0.4
         version: 4.0.4(@babel/core@7.23.0)
       '@typescript-eslint/eslint-plugin':
         specifier: 6.7.3
@@ -224,64 +224,64 @@ importers:
         specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__application':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__array':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__component':
-        specifier: ^4.0.18
+        specifier: 4.0.18
         version: 4.0.18(@babel/core@7.23.0)
       '@types/ember__controller':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__debug':
-        specifier: ^4.0.5
+        specifier: 4.0.5
         version: 4.0.5(@babel/core@7.23.0)
       '@types/ember__destroyable':
-        specifier: ^4.0.2
+        specifier: 4.0.2
         version: 4.0.2
       '@types/ember__engine':
-        specifier: ^4.0.7
+        specifier: 4.0.7
         version: 4.0.7(@babel/core@7.23.0)
       '@types/ember__error':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__helper':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3(@babel/core@7.23.0)
       '@types/ember__modifier':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__object':
-        specifier: ^4.0.8
+        specifier: 4.0.8
         version: 4.0.8(@babel/core@7.23.0)
       '@types/ember__owner':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6
       '@types/ember__polyfills':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__routing':
-        specifier: ^4.0.16
+        specifier: 4.0.16
         version: 4.0.16(@babel/core@7.23.0)
       '@types/ember__runloop':
-        specifier: ^4.0.6
+        specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.0)
       '@types/ember__service':
-        specifier: ^4.0.5
+        specifier: 4.0.5
         version: 4.0.5(@babel/core@7.23.0)
       '@types/ember__string':
-        specifier: ^3.0.11
+        specifier: 3.0.11
         version: 3.0.11
       '@types/ember__template':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3
       '@types/ember__test':
-        specifier: ^4.0.3
+        specifier: 4.0.3
         version: 4.0.3(@babel/core@7.23.0)
       '@types/ember__utils':
-        specifier: ^4.0.4
+        specifier: 4.0.4
         version: 4.0.4(@babel/core@7.23.0)
       '@types/markdown-it':
         specifier: 13.0.2
