@@ -16,7 +16,8 @@ export default class ShoelaceService extends Service {
     // add language if set in html tag
     const language = config.language === 'auto' ? document.documentElement.lang || navigator.languages[0] || 'en' : config.language;
 
-    config.languages = [...new Set([...config.languages, language])];
+    // always add 'en' as fallback language
+    config.languages = [...new Set(['en', ...config.languages, language])];
 
     this.config = config;
 
