@@ -1,6 +1,6 @@
 {
   "name": "test-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Test app for shoelace-ember addon",
   "repository": "",
@@ -110,7 +110,7 @@
     "qunit": "2.20.0",
     "qunit-dom": "2.0.0",
     "sass": "1.68.0",
-    "shoelace-ember": "0.1.0",
+    "shoelace-ember": "0.1.1",
     "stylelint": "15.10.3",
     "stylelint-config-standard": "34.0.0",
     "stylelint-prettier": "4.0.2",
