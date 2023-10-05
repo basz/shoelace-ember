@@ -416,8 +416,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       sass:
-        specifier: 1.68.0
-        version: 1.68.0
+        specifier: 1.69.0
+        version: 1.69.0
       shoelace-ember:
         specifier: 0.1.1
         version: link:../shoelace-ember
@@ -1844,7 +1844,7 @@ packages:
     dependencies:
       '@csstools/sass-import-resolve': 1.0.0
       postcss: 8.4.31
-      sass: 1.68.0
+      sass: 1.69.0
       source-map: 0.7.4
     dev: true
 
@@ -13856,8 +13856,8 @@ packages:
       walker: 1.0.8
     dev: true
 
-  /sass@1.68.0:
-    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
+  /sass@1.69.0:
+    resolution: {integrity: sha512-l3bbFpfTOGgQZCLU/gvm1lbsQ5mC/WnLz3djL2v4WCJBDrWm58PO+jgngcGRNnKUh6wSsdm50YaovTqskZ0xDQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
