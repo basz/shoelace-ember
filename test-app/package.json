@@ -108,7 +108,7 @@
     "postcss-scss": "4.0.9",
     "prettier": "3.0.3",
     "qunit": "2.20.0",
-    "qunit-dom": "2.0.0",
+    "qunit-dom": "3.0.0",
     "sass": "1.69.3",
     "shoelace-ember": "0.1.1",
     "stylelint": "15.10.3",
