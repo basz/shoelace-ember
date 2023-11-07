@@ -290,8 +290,8 @@ importers:
         specifier: 2.19.7
         version: 2.19.7
       '@types/rsvp':
-        specifier: 4.0.6
-        version: 4.0.6
+        specifier: 4.0.7
+        version: 4.0.7
       '@typescript-eslint/eslint-plugin':
         specifier: 6.10.0
         version: 6.10.0(@typescript-eslint/parser@6.10.0)(eslint@8.53.0)(typescript@5.2.2)
@@ -4309,7 +4309,7 @@ packages:
     resolution: {integrity: sha512-yf20VPBWNdDjgZpmY33rg4OBt1nm0OasU1zuRrMDnATSUgIK2KLc2DxMPAXqr9YTpMtOd599LWdvYf4w+u4S5g==}
     dependencies:
       '@types/ember': 4.0.8(@babel/core@7.23.2)
-      '@types/rsvp': 4.0.6
+      '@types/rsvp': 4.0.7
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -4556,8 +4556,8 @@ packages:
     resolution: {integrity: sha512-Vhmt0IASo026ZU20O3KP1nBZOCXduQ/Ei+vpgs0hfDZHysSIfhnMc61ZMIUuaazfYS0J9EhLz+jJsft6iYX4Kw==}
     dev: true
 
-  /@types/rsvp@4.0.6:
-    resolution: {integrity: sha512-2CgsI0j74ULhrZrqcMwZ7nSvcyX767KaJDefxCnrNSp1D4MuLX8qxOPHwHz7/5b2FC94ILh3Db6du6QAvpc+Qw==}
+  /@types/rsvp@4.0.7:
+    resolution: {integrity: sha512-TOsoofOK1MNrZvsoq9op8Qc8r+pYJ6zwH4YCvDXNcsgjtFgS6IP/uGfLW0JH4zJgXGEC1TxJuKe0EBUPIAIA0A==}
     dev: true
 
   /@types/scheduler@0.16.4:
