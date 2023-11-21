@@ -284,8 +284,8 @@ importers:
         specifier: 4.0.6
         version: 4.0.6(@babel/core@7.23.3)
       '@types/markdown-it':
-        specifier: 13.0.6
-        version: 13.0.6
+        specifier: 13.0.7
+        version: 13.0.7
       '@types/qunit':
         specifier: 2.19.8
         version: 2.19.8
@@ -4528,8 +4528,8 @@ packages:
     resolution: {integrity: sha512-pTjcqY9E4nOI55Wgpz7eiI8+LzdYnw3qxXCfHyBDdPbYvbyLgWLJGh8EdPvqawwMK1Uo1794AUkkR38Fr0g+2g==}
     dev: true
 
-  /@types/markdown-it@13.0.6:
-    resolution: {integrity: sha512-0VqpvusJn1/lwRegCxcHVdmLfF+wIsprsKMC9xW8UPcTxhFcQtoN/fBU1zMe8pH7D/RuueMh2CaBaNv+GrLqTw==}
+  /@types/markdown-it@13.0.7:
+    resolution: {integrity: sha512-U/CBi2YUUcTHBt5tjO2r5QV/x0Po6nsYwQU4Y04fBS6vfoImaiZ6f8bi3CjTCxBPQSO1LMyUqkByzi8AidyxfA==}
     dependencies:
       '@types/linkify-it': 3.0.3
       '@types/mdurl': 1.0.3
