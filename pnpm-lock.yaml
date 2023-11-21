@@ -395,8 +395,8 @@ importers:
         specifier: 8.0.1
         version: 8.0.1(eslint@8.54.0)
       flowbite:
-        specifier: 2.1.1
-        version: 2.1.1
+        specifier: 2.2.0
+        version: 2.2.0
       loader.js:
         specifier: 4.7.0
         version: 4.7.0
@@ -10108,8 +10108,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /flowbite@2.1.1:
-    resolution: {integrity: sha512-FkTwNXlfWRXUhSsiE9D4bEqLN8ywdunW2qOz1z7gN+Co7h9EQIJf/Fr4xgq1NJPFa+6MeMf08QLzviU7LqB/rQ==}
+  /flowbite@2.2.0:
+    resolution: {integrity: sha512-Eq0qWz4a5nlxaGuUcspzpu+8Ny0A7lKEJEKcuPpkdSoF8tWjbKeuVVgKk8/q10ZE9bhXh1GHBXdCsRxu0LZTNQ==}
     dependencies:
       '@popperjs/core': 2.11.8
       mini-svg-data-uri: 1.4.4
