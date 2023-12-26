@@ -43,7 +43,7 @@
     "@glint/environment-ember-loose": "1.2.1",
     "@glint/template": "1.2.1",
     "@tailwindcss/typography": "0.5.10",
-    "@tsconfig/ember": "3.0.1",
+    "@tsconfig/ember": "3.0.3",
     "@types/ember": "4.0.10",
     "@types/ember__application": "4.0.10",
     "@types/ember__array": "4.0.9",
