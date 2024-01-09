@@ -27,7 +27,7 @@
     "test:watch": "ember test --server"
   },
   "devDependencies": {
-    "@csstools/postcss-sass": "5.0.1",
+    "@csstools/postcss-sass": "5.1.1",
     "@ember/optional-features": "2.0.0",
     "@ember/render-modifiers": "2.1.0",
     "@ember/string": "3.1.1",
