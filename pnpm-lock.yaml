@@ -173,8 +173,8 @@ importers:
         specifier: 5.1.1
         version: 5.1.1(postcss@8.4.31)
       '@ember/optional-features':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.1.0
+        version: 2.1.0
       '@ember/render-modifiers':
         specifier: 2.1.0
         version: 2.1.0(@babel/core@7.23.7)(@glint/template@1.2.2)(ember-source@5.5.0)
@@ -1986,8 +1986,8 @@ packages:
     resolution: {integrity: sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog==}
     dev: true
 
-  /@ember/optional-features@2.0.0:
-    resolution: {integrity: sha512-4gkvuGRYfpAh1nwAz306cmMeC1mG7wxZnbsBZ09mMaMX/W7IyKOKc/38JwrDPUFUalmNEM7q7JEPcmew2M3Dog==}
+  /@ember/optional-features@2.1.0:
+    resolution: {integrity: sha512-IXjDpTFhsjPk9h3OXwXjlRfhM/Wjtw2E71Xos/81ZsTTwZMB9H+DWhsxePXOkzYy7Jvw4TIzKbMfcnT8mrtwWQ==}
     engines: {node: 10.* || 12.* || >= 14}
     dependencies:
       chalk: 4.1.2
@@ -9566,6 +9566,7 @@ packages:
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
