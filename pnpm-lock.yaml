@@ -308,8 +308,8 @@ importers:
         specifier: 8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: 2.7.2
-        version: 2.7.2(@glint/template@1.2.2)(webpack@5.89.0)
+        specifier: 2.7.4
+        version: 2.7.4(@glint/template@1.2.2)(webpack@5.89.0)
       ember-cli:
         specifier: 5.5.0
         version: 5.5.0
@@ -852,7 +852,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
@@ -1150,7 +1150,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
@@ -1161,7 +1161,7 @@ packages:
       '@babel/core': ^7.12.0
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.23.7)
     dev: true
@@ -1478,7 +1478,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
@@ -1490,7 +1490,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.23.7)
     dev: true
@@ -1615,7 +1615,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.7)
     dev: true
@@ -1636,7 +1636,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.7)
+      '@babel/helper-create-class-features-plugin': 7.23.7(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.23.7)
     dev: true
@@ -2040,7 +2040,7 @@ packages:
       '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
-      ember-auto-import: 2.7.2(@glint/template@1.2.2)(webpack@5.89.0)
+      ember-auto-import: 2.7.4(@glint/template@1.2.2)(webpack@5.89.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-source: 5.5.0(@babel/core@7.23.7)(@glimmer/component@1.1.2)(@glint/template@1.2.2)(rsvp@4.8.5)(webpack@5.89.0)
@@ -7239,8 +7239,8 @@ packages:
     resolution: {integrity: sha512-VY+J0e4SFcNfQy19MEoMdaIcZLmDCprqvBtkii1WTCTQHpRvf5N8+3kTYCgL/PcntvwQvmMJWTuDPsq+IlhWKQ==}
     dev: true
 
-  /ember-auto-import@2.7.2(@glint/template@1.2.2)(webpack@5.89.0):
-    resolution: {integrity: sha512-pkWIljmJClYL17YBk8FjO7NrZPQoY9v0b+FooJvaHf/xlDQIBYVP7OaDHbNuNbpj7+wAwSDAnnwxjCoLsmm4cw==}
+  /ember-auto-import@2.7.4(@glint/template@1.2.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-6CdXSegJJc8nwwK7+1lIcBUnMVrJRNd4ZdMgcKbCAwPvcGxMgRVBddSzrX/+q/UuflvTEO26Dk1g7Z6KHMXUhw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@babel/core': 7.23.7(supports-color@8.1.1)
@@ -7966,7 +7966,7 @@ packages:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 4.1.2
-      ember-auto-import: 2.7.2(@glint/template@1.2.2)(webpack@5.89.0)
+      ember-auto-import: 2.7.4(@glint/template@1.2.2)(webpack@5.89.0)
       ember-cli-babel: 7.26.11
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
