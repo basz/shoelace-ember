@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
@@ -42,9 +45,6 @@ jobs:
       #     apt-get update
       #     apt-get -y install chromium-browser
       #     chromium-browser --version
-
-      - name: Checkout code
-        uses: actions/checkout@v4
 
       - name: Installing Dependencies
         run: |
