@@ -356,8 +356,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(ember-source@5.5.0)
       ember-page-title:
-        specifier: 8.2.0
-        version: 8.2.0(ember-source@5.5.0)
+        specifier: 8.2.3
+        version: 8.2.3(ember-source@5.5.0)
       ember-qunit:
         specifier: 8.0.2
         version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.2.2)(ember-source@5.5.0)(qunit@2.20.0)
@@ -7860,8 +7860,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-page-title@8.2.0(ember-source@5.5.0):
-    resolution: {integrity: sha512-8t6kJ4V47BLccXH5I/0h86MG0TqwGi7UDxbLGn8yudg8Hit3iAkB3YrN2378uLUluYZM8KBxu1NsrMRsxhi48A==}
+  /ember-page-title@8.2.3(ember-source@5.5.0):
+    resolution: {integrity: sha512-9XH4EVPCpSCyXRsLPzdDydU4HgQnaVeJJTrRF0WVh5bZERI9DgxuHv1NPmZU28todHRH91KcBc5nx8kIVJmqUw==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
       ember-source: '>= 3.28.0'
