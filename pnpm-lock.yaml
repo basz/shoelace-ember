@@ -290,8 +290,8 @@ importers:
         specifier: 2.19.9
         version: 2.19.9
       '@types/rsvp':
-        specifier: 4.0.8
-        version: 4.0.8
+        specifier: 4.0.9
+        version: 4.0.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.18.1
         version: 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
@@ -3411,7 +3411,7 @@ packages:
     resolution: {integrity: sha512-YM/ecDQmAXFpB6Owu+13HH//m8uXLZGcIDmHQCjTj9a5aWbtCo/d/+mc9gbVNaa/35KadjJ4NLD/Hz9PiKQXDw==}
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.23.7)
-      '@types/rsvp': 4.0.8
+      '@types/rsvp': 4.0.9
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -3660,6 +3660,10 @@ packages:
 
   /@types/rsvp@4.0.8:
     resolution: {integrity: sha512-OraQXMlBrD3nll0VuEKENY3IoR4N3eDIqElVWo5dSheMveYYMDSIUMbtcI7wOGWyUilLwfaOx9VF8U8LdrHXkg==}
+    dev: true
+
+  /@types/rsvp@4.0.9:
+    resolution: {integrity: sha512-F6vaN5mbxw2MBCu/AD9fSKwrhnto2pE77dyUsi415qz9IP9ni9ZOWXHxnXfsM4NW9UjW+it189jvvqnhv37Z7Q==}
     dev: true
 
   /@types/scheduler@0.16.4:

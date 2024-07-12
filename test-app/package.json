@@ -67,7 +67,7 @@
     "@types/ember__utils": "4.0.6",
     "@types/markdown-it": "13.0.8",
     "@types/qunit": "2.19.9",
-    "@types/rsvp": "4.0.8",
+    "@types/rsvp": "4.0.9",
     "@typescript-eslint/eslint-plugin": "6.18.1",
     "@typescript-eslint/parser": "6.18.1",
     "autoprefixer": "10.4.16",
