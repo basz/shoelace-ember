@@ -182,8 +182,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@ember/test-helpers':
-        specifier: 3.2.1
-        version: 3.2.1(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0)
+        specifier: 3.3.0
+        version: 3.3.0(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0)
       '@embroider/compat':
         specifier: 3.4.3
         version: 3.4.3(@embroider/core@3.4.3)(@glint/template@1.2.2)
@@ -360,7 +360,7 @@ importers:
         version: 8.2.3(ember-source@5.5.0)
       ember-qunit:
         specifier: 8.0.2
-        version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.2.2)(ember-source@5.5.0)(qunit@2.20.0)
+        version: 8.0.2(@ember/test-helpers@3.3.0)(@glint/template@1.2.2)(ember-source@5.5.0)(qunit@2.20.0)
       ember-resolver:
         specifier: 11.0.1
         version: 11.0.1(ember-source@5.5.0)
@@ -2029,8 +2029,8 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers@3.2.1(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0):
-    resolution: {integrity: sha512-DvJSihJPV4xshwEgBrFN4aUVc9m/Y/hVzwcslfSVq/h3dMWCyAj4+agkkdJPQrwBaE+H4IyGNzr555S7bTErEA==}
+  /@ember/test-helpers@3.3.0(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0):
+    resolution: {integrity: sha512-HEI28wtjnQuEj9+DstHUEEKPtqPAEVN9AAVr4EifVCd3DyEDy0m6hFT4qbap1WxAIktLja2QXGJg50lVWzZc5g==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
       ember-source: ^4.0.0 || ^5.0.0
@@ -2040,6 +2040,7 @@ packages:
       '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
+      dom-element-descriptors: 0.5.1
       ember-auto-import: 2.7.4(@glint/template@1.2.2)(webpack@5.89.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
@@ -7145,6 +7146,10 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /dom-element-descriptors@0.5.1:
+    resolution: {integrity: sha512-DLayMRQ+yJaziF4JJX1FMjwjdr7wdTr1y9XvZ+NfHELfOMcYDnCHneAYXAS4FT1gLILh4V0juMZohhH1N5FsoQ==}
+    dev: true
+
   /dom-serializer@0.2.2:
     resolution: {integrity: sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==}
     dependencies:
@@ -7873,14 +7878,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.2.2)(ember-source@5.5.0)(qunit@2.20.0):
+  /ember-qunit@8.0.2(@ember/test-helpers@3.3.0)(@glint/template@1.2.2)(ember-source@5.5.0)(qunit@2.20.0):
     resolution: {integrity: sha512-Rf60jeUTWNsF3Imf/FLujW/B/DFmKVXKmXO1lirTXjpertKfwRhp/3MnN8a/U/WyodTIsERkInGT1IqTtphCdQ==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
       ember-source: '>=4.0.0'
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 3.2.1(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0)
+      '@ember/test-helpers': 3.3.0(@glint/template@1.2.2)(ember-source@5.5.0)(webpack@5.89.0)
       '@embroider/addon-shim': 1.8.7
       '@embroider/macros': 1.13.4(@glint/template@1.2.2)
       ember-cli-test-loader: 3.1.0
@@ -13884,6 +13889,7 @@ packages:
 
   /rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
