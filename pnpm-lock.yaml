@@ -12,8 +12,8 @@ importers:
         specifier: 6.1.0
         version: 6.1.0(release-it@17.5.0)
       '@release-it-plugins/workspaces':
-        specifier: 4.0.0
-        version: 4.0.0(release-it@17.5.0)
+        specifier: 4.2.0
+        version: 4.2.0(release-it@17.5.0)
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
@@ -171,7 +171,7 @@ importers:
     devDependencies:
       '@csstools/postcss-sass':
         specifier: 5.1.1
-        version: 5.1.1(postcss@8.4.31)
+        version: 5.1.1(postcss@8.4.39)
       '@ember/optional-features':
         specifier: 2.1.0
         version: 2.1.0
@@ -300,7 +300,7 @@ importers:
         version: 7.16.0(eslint@8.57.0)(typescript@5.3.3)
       autoprefixer:
         specifier: 10.4.19
-        version: 10.4.19(postcss@8.4.31)
+        version: 10.4.19(postcss@8.4.39)
       broccoli-asset-rev:
         specifier: 3.0.0
         version: 3.0.0
@@ -405,7 +405,7 @@ importers:
         version: 5.0.2
       postcss-scss:
         specifier: 4.0.9
-        version: 4.0.9(postcss@8.4.31)
+        version: 4.0.9(postcss@8.4.39)
       prettier:
         specifier: 3.1.1
         version: 3.1.1
@@ -1910,14 +1910,14 @@ packages:
       '@csstools/css-tokenizer': 2.4.1
     dev: true
 
-  /@csstools/postcss-sass@5.1.1(postcss@8.4.31):
+  /@csstools/postcss-sass@5.1.1(postcss@8.4.39):
     resolution: {integrity: sha512-La7bgTcM6YwPBLqlaXg7lMLry82iLv1a+S1RmgvHq2mH2Zd57L2anjZvJC8ACUHWc4M9fXws93dq6gaK0kZyAw==}
     engines: {node: ^12 || ^14 || >=16}
     peerDependencies:
       postcss: ^8.4.6
     dependencies:
       '@csstools/sass-import-resolve': 1.0.0
-      postcss: 8.4.31
+      postcss: 8.4.39
       sass: 1.69.7
       source-map: 0.7.4
     dev: true
@@ -3054,16 +3054,16 @@ packages:
       - supports-color
     dev: true
 
-  /@release-it-plugins/workspaces@4.0.0(release-it@17.5.0):
-    resolution: {integrity: sha512-79qsR770mvuQeTSMnOjrEJuJHQ4x1KyUkZjqCOQ/UxjK+igNYYDsLK26LpKTweeTjpbpmLYaOg6bl+28M5CO0A==}
+  /@release-it-plugins/workspaces@4.2.0(release-it@17.5.0):
+    resolution: {integrity: sha512-hzQMdYWFnLBS/7dfasIWyeD2LUKeL7LT8ldxZgpzon90lW1cEU4Kpad78KmpZl1L188YHAbwVnboE+6i14jlEQ==}
     engines: {node: '>= 16'}
     peerDependencies:
-      release-it: ^14.0.0 || ^15.2.0 || ^16.0.0
+      release-it: ^14.0.0 || ^15.2.0 || ^16.0.0 || ^17.0.0
     dependencies:
       detect-indent: 6.1.0
       detect-newline: 3.1.0
       release-it: 17.5.0
-      semver: 7.5.4
+      semver: 7.6.2
       url-join: 4.0.1
       validate-peer-dependencies: 1.2.0
       walk-sync: 2.2.0
@@ -4502,7 +4502,7 @@ packages:
     hasBin: true
     dev: true
 
-  /autoprefixer@10.4.19(postcss@8.4.31):
+  /autoprefixer@10.4.19(postcss@8.4.39):
     resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -4514,7 +4514,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.31
+      postcss: 8.4.39
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -12661,13 +12661,13 @@ packages:
       postcss: 8.4.39
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.31):
+  /postcss-scss@4.0.9(postcss@8.4.39):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.39
     dev: true
 
   /postcss-selector-parser@6.0.10:
