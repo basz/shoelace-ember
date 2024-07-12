@@ -42,7 +42,7 @@
     "@glimmer/tracking": "1.1.2",
     "@glint/environment-ember-loose": "1.2.2",
     "@glint/template": "1.2.2",
-    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/typography": "0.5.13",
     "@tsconfig/ember": "3.0.1",
     "@types/ember": "4.0.11",
     "@types/ember__application": "4.0.10",
