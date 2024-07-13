@@ -107,7 +107,7 @@
     "eslint-plugin-qunit": "8.1.1",
     "flowbite": "2.4.1",
     "loader.js": "4.7.0",
-    "npm-run-all2": "5.0.2",
+    "npm-run-all2": "6.2.2",
     "postcss-scss": "4.0.9",
     "prettier": "3.1.1",
     "qunit": "2.20.0",
