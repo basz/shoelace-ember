@@ -40,7 +40,7 @@
     "@embroider/webpack": "4.0.4",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
-    "@glint/environment-ember-loose": "1.2.2",
+    "@glint/environment-ember-loose": "1.4.0",
     "@glint/template": "1.4.0",
     "@tailwindcss/typography": "0.5.13",
     "@tsconfig/ember": "3.0.8",
