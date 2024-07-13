@@ -36,7 +36,7 @@
     "@embroider/core": "3.4.14",
     "@embroider/macros": "1.16.5",
     "@embroider/test-setup": "4.0.0",
-    "@embroider/util": "1.12.1",
+    "@embroider/util": "1.13.1",
     "@embroider/webpack": "4.0.4",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
