@@ -437,14 +437,14 @@ importers:
         specifier: 0.1.1
         version: 0.1.1(@shoelace-style/shoelace@2.15.1(@types/react@18.3.3))
       stylelint:
-        specifier: 16.7.0
-        version: 16.7.0(typescript@5.5.4)
+        specifier: 16.8.0
+        version: 16.8.0(typescript@5.5.4)
       stylelint-config-standard:
         specifier: 36.0.1
-        version: 36.0.1(stylelint@16.7.0(typescript@5.5.4))
+        version: 36.0.1(stylelint@16.8.0(typescript@5.5.4))
       stylelint-prettier:
         specifier: 5.0.2
-        version: 5.0.2(prettier@3.3.3)(stylelint@16.7.0(typescript@5.5.4))
+        version: 5.0.2(prettier@3.3.3)(stylelint@16.8.0(typescript@5.5.4))
       svg-sprite-loader:
         specifier: 6.0.11
         version: 6.0.11
@@ -3493,6 +3493,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.3.6:
+    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   decimal.js@10.4.3:
     resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
 
@@ -6455,8 +6464,8 @@ packages:
     peerDependencies:
       postcss: '>4 <9'
 
-  postcss-resolve-nested-selector@0.1.1:
-    resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
+  postcss-resolve-nested-selector@0.1.4:
+    resolution: {integrity: sha512-R6vHqZWgVnTAPq0C+xjyHfEZqfIYboCBVSy24MjxEDm+tIh1BU4O6o7DP7AA7kHzf136d+Qc5duI4tlpHjixDw==}
 
   postcss-safe-parser@7.0.0:
     resolution: {integrity: sha512-ovehqRNVCpuFzbXoTb4qLtyzK3xn3t/CUBxOs8LsnQjQrShaB4lKiHoVqY8ANaC0hBMHq5QVWk77rwGklFUDrg==}
@@ -7367,8 +7376,8 @@ packages:
       prettier: '>=3.0.0'
       stylelint: '>=16.0.0'
 
-  stylelint@16.7.0:
-    resolution: {integrity: sha512-Q1ATiXlz+wYr37a7TGsfvqYn2nSR3T/isw3IWlZQzFzCNoACHuGBb6xBplZXz56/uDRJHIygxjh7jbV/8isewA==}
+  stylelint@16.8.0:
+    resolution: {integrity: sha512-Jjr40w3PXDiJVW6c9swLM0a1e0DgDm/XkFozc4XgAcREFas+/nchzmDmeVxazbzXgpDrwm+cW6W6iGtZqYUh+g==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -10701,7 +10710,7 @@ snapshots:
       '@types/ember__string': 3.0.15
       '@types/ember__template': 4.0.7
       '@types/ember__test': 4.0.6(@babel/core@7.24.9)
-      '@types/ember__utils': 4.0.7
+      '@types/ember__utils': 4.0.7(@babel/core@7.24.9)
       '@types/rsvp': 4.0.9
 
   '@types/ember@4.0.11(@babel/core@7.24.9)':
@@ -10849,10 +10858,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.24.9)':
     dependencies:
@@ -12638,6 +12643,10 @@ snapshots:
       ms: 2.1.2
     optionalDependencies:
       supports-color: 8.1.1
+
+  debug@4.3.6:
+    dependencies:
+      ms: 2.1.2
 
   decimal.js@10.4.3: {}
 
@@ -16454,7 +16463,7 @@ snapshots:
     dependencies:
       postcss: 5.2.18
 
-  postcss-resolve-nested-selector@0.1.1: {}
+  postcss-resolve-nested-selector@0.1.4: {}
 
   postcss-safe-parser@7.0.0(postcss@8.4.40):
     dependencies:
@@ -17456,22 +17465,22 @@ snapshots:
 
   styled_string@0.0.1: {}
 
-  stylelint-config-recommended@14.0.1(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-config-recommended@14.0.1(stylelint@16.8.0(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.4)
+      stylelint: 16.8.0(typescript@5.5.4)
 
-  stylelint-config-standard@36.0.1(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-config-standard@36.0.1(stylelint@16.8.0(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.4)
-      stylelint-config-recommended: 14.0.1(stylelint@16.7.0(typescript@5.5.4))
+      stylelint: 16.8.0(typescript@5.5.4)
+      stylelint-config-recommended: 14.0.1(stylelint@16.8.0(typescript@5.5.4))
 
-  stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.8.0(typescript@5.5.4)):
     dependencies:
       prettier: 3.3.3
       prettier-linter-helpers: 1.0.0
-      stylelint: 16.7.0(typescript@5.5.4)
+      stylelint: 16.8.0(typescript@5.5.4)
 
-  stylelint@16.7.0(typescript@5.5.4):
+  stylelint@16.8.0(typescript@5.5.4):
     dependencies:
       '@csstools/css-parser-algorithms': 2.7.1(@csstools/css-tokenizer@2.4.1)
       '@csstools/css-tokenizer': 2.4.1
@@ -17483,7 +17492,7 @@ snapshots:
       cosmiconfig: 9.0.0(typescript@5.5.4)
       css-functions-list: 3.2.2
       css-tree: 2.3.1
-      debug: 4.3.5(supports-color@8.1.1)
+      debug: 4.3.6
       fast-glob: 3.3.2
       fastest-levenshtein: 1.0.16
       file-entry-cache: 9.0.0
@@ -17501,7 +17510,7 @@ snapshots:
       normalize-path: 3.0.0
       picocolors: 1.0.1
       postcss: 8.4.40
-      postcss-resolve-nested-selector: 0.1.1
+      postcss-resolve-nested-selector: 0.1.4
       postcss-safe-parser: 7.0.0(postcss@8.4.40)
       postcss-selector-parser: 6.1.1
       postcss-value-parser: 4.2.0
