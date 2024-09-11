@@ -6,7 +6,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  plugins: ['ember'],
+  plugins: ['ember', 'simple-import-sort'],
   extends: ['eslint:recommended', 'plugin:ember/recommended', 'plugin:prettier/recommended'],
   env: {
     browser: true,
@@ -18,8 +18,10 @@ module.exports = {
       files: ['**/*.ts'],
       extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
       rules: {
-        '@typescript-eslint/no-explicit-any': 'warn',
-        // Add any custom rules here
+        '@typescript-eslint/no-explicit-any': 'off',
+        // increase the severity of rules so they are auto-fixable
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
       },
     },
     // node files

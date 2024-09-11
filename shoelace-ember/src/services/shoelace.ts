@@ -1,5 +1,6 @@
 import Service from '@ember/service';
-import { ShoelaceConfig, applyShoelaceTheme, setupShoelace } from '../index.ts';
+
+import { applyShoelaceTheme, setupShoelace, ShoelaceConfig } from '../index.ts';
 
 export default class ShoelaceService extends Service {
   private readonly config: ShoelaceConfig;

@@ -1,7 +1,8 @@
-import { setBasePath } from '@shoelace-style/shoelace';
-import { tracked } from '@glimmer/tracking';
-import { assert } from '@ember/debug';
 import './style.css';
+
+import { assert } from '@ember/debug';
+import { tracked } from '@glimmer/tracking';
+import { setBasePath } from '@shoelace-style/shoelace';
 
 const defaultConfig: ShoelaceConfig = {
   basePath: '/shoelace-ember',

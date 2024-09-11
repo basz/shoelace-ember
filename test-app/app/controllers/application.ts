@@ -1,11 +1,11 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 import { importSync } from '@embroider/macros';
 import { ensureSafeComponent } from '@embroider/util';
-import { inject as service } from '@ember/service';
-import { componentList } from 'test-app/constants';
+import { tracked } from '@glimmer/tracking';
 import type ShoelaceService from 'shoelace-ember/services/shoelace';
+import { componentList } from 'test-app/constants';
 
 export default class ApplicationController extends Controller {
   @service declare shoelace: ShoelaceService;

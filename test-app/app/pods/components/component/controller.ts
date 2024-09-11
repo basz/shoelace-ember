@@ -2,7 +2,6 @@ import Controller from '@ember/controller';
 import { importSync } from '@embroider/macros';
 import { ensureSafeComponent } from '@embroider/util';
 import { tracked } from '@glimmer/tracking';
-
 import { initFlowbite } from 'flowbite';
 
 export default class ComponentController extends Controller {
