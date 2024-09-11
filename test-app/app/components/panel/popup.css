@@ -1,0 +1,37 @@
+.popup-overview sl-popup {
+  --arrow-color: var(--sl-color-primary-600);
+}
+
+.popup-overview span[slot="anchor"] {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: dashed 2px var(--sl-color-neutral-600);
+  margin: 50px;
+}
+
+.popup-overview .box {
+  width: 100px;
+  height: 50px;
+  background: var(--sl-color-primary-600);
+  border-radius: var(--sl-border-radius-medium);
+}
+
+.popup-overview-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+}
+
+.popup-overview-options sl-select {
+  width: 160px;
+}
+
+.popup-overview-options sl-input {
+  width: 100px;
+}
+
+.popup-overview-options + .popup-overview-options {
+  margin-top: 1rem;
+}
