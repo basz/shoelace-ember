@@ -237,7 +237,7 @@ importers:
         version: 1.4.0
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.11)
+        version: 0.5.15(tailwindcss@3.4.12)
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -456,7 +456,7 @@ importers:
         version: 36.0.1(stylelint@16.9.0(typescript@5.6.2))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.9.0(typescript@5.6.2))(tailwindcss@3.4.11)
+        version: 0.0.7(stylelint@16.9.0(typescript@5.6.2))(tailwindcss@3.4.12)
       stylelint-prettier:
         specifier: 5.0.2
         version: 5.0.2(prettier@3.3.3)(stylelint@16.9.0(typescript@5.6.2))
@@ -464,8 +464,8 @@ importers:
         specifier: 6.0.11
         version: 6.0.11
       tailwindcss:
-        specifier: 3.4.11
-        version: 3.4.11
+        specifier: 3.4.12
+        version: 3.4.12
       typescript:
         specifier: 5.6.2
         version: 5.6.2
@@ -7771,8 +7771,8 @@ packages:
     resolution: {integrity: sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.11:
-    resolution: {integrity: sha512-qhEuBcLemjSJk5ajccN9xJFtM/h0AVCPaA6C92jNP+M2J8kX+eMJHI7R2HFKUvvAsMpcfLILMCFYSeDwpMmlUg==}
+  tailwindcss@3.4.12:
+    resolution: {integrity: sha512-Htf/gHj2+soPb9UayUNci/Ja3d8pTmu9ONTfh4QY8r3MATTZOzmv6UYWF7ZwikEIC8okpfqmGqrmDehua8mF8w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10444,13 +10444,13 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.11)':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.12)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.11
+      tailwindcss: 3.4.12
 
   '@tootallnate/once@1.1.2': {}
 
@@ -17480,10 +17480,10 @@ snapshots:
       stylelint: 16.9.0(typescript@5.6.2)
       stylelint-config-recommended: 14.0.1(stylelint@16.9.0(typescript@5.6.2))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.9.0(typescript@5.6.2))(tailwindcss@3.4.11):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.9.0(typescript@5.6.2))(tailwindcss@3.4.12):
     dependencies:
       stylelint: 16.9.0(typescript@5.6.2)
-      tailwindcss: 3.4.11
+      tailwindcss: 3.4.12
 
   stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.9.0(typescript@5.6.2)):
     dependencies:
@@ -17620,7 +17620,7 @@ snapshots:
       css-tree: 2.3.1
       css-what: 6.1.0
       csso: 5.0.5
-      picocolors: 1.0.1
+      picocolors: 1.1.0
 
   symbol-tree@3.2.4: {}
 
@@ -17659,7 +17659,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.11:
+  tailwindcss@3.4.12:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -17674,7 +17674,7 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
-      picocolors: 1.0.1
+      picocolors: 1.1.0
       postcss: 8.4.47
       postcss-import: 15.1.0(postcss@8.4.47)
       postcss-js: 4.0.1(postcss@8.4.47)
@@ -18088,13 +18088,13 @@ snapshots:
     dependencies:
       browserslist: 4.23.2
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.0
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
     dependencies:
       browserslist: 4.23.3
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.0
 
   update-notifier@7.1.0:
     dependencies:
