@@ -36,7 +36,7 @@
     "@ember/string": "4.0.0",
     "@ember/test-helpers": "4.0.4",
     "@embroider/compat": "3.6.1",
-    "@embroider/core": "3.4.15",
+    "@embroider/core": "3.4.16",
     "@embroider/macros": "1.16.6",
     "@embroider/test-setup": "4.0.0",
     "@embroider/util": "1.13.2",
