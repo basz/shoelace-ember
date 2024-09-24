@@ -34,7 +34,7 @@ importers:
         version: 1.1.2(@babel/core@7.25.2)
       '@shoelace-style/shoelace':
         specifier: 2.17.1
-        version: 2.17.1(@types/react@18.3.8)
+        version: 2.17.1(@types/react@18.3.9)
       rollup:
         specifier: 4.22.4
         version: 4.22.4
@@ -127,8 +127,8 @@ importers:
         specifier: 4.0.7
         version: 4.0.7(@babel/core@7.25.2)
       '@types/react':
-        specifier: 18.3.8
-        version: 18.3.8
+        specifier: 18.3.9
+        version: 18.3.9
       '@typescript-eslint/eslint-plugin':
         specifier: 8.7.0
         version: 8.7.0(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)
@@ -176,7 +176,7 @@ importers:
     dependencies:
       '@shoelace-style/shoelace':
         specifier: 2.17.1
-        version: 2.17.1(@types/react@18.3.8)
+        version: 2.17.1(@types/react@18.3.9)
       markdown-it:
         specifier: 14.1.0
         version: 14.1.0
@@ -2120,8 +2120,8 @@ packages:
   '@types/range-parser@1.2.4':
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
 
-  '@types/react@18.3.8':
-    resolution: {integrity: sha512-syBUrW3/XpnW4WJ41Pft+I+aPoDVbrBVQGEnbD7NijDGlVC+8gV/XKRY+7vMDlfPpbwYt0l1vd/Sj8bJGMbs9Q==}
+  '@types/react@18.3.9':
+    resolution: {integrity: sha512-+BpAVyTpJkNWWSSnaLBk6ePpHLOGJKnEQNbINNovPWzvEUyAe3e+/d494QdEh71RekM/qV7lw6jzf1HGrJyAtQ==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -10160,9 +10160,9 @@ snapshots:
 
   '@lit-labs/ssr-dom-shim@1.2.0': {}
 
-  '@lit/react@1.0.5(@types/react@18.3.8)':
+  '@lit/react@1.0.5(@types/react@18.3.9)':
     dependencies:
-      '@types/react': 18.3.8
+      '@types/react': 18.3.9
 
   '@lit/reactive-element@2.0.4':
     dependencies:
@@ -10402,11 +10402,11 @@ snapshots:
 
   '@shoelace-style/localize@3.1.2': {}
 
-  '@shoelace-style/shoelace@2.17.1(@types/react@18.3.8)':
+  '@shoelace-style/shoelace@2.17.1(@types/react@18.3.9)':
     dependencies:
       '@ctrl/tinycolor': 4.1.0
       '@floating-ui/dom': 1.6.7
-      '@lit/react': 1.0.5(@types/react@18.3.8)
+      '@lit/react': 1.0.5(@types/react@18.3.9)
       '@shoelace-style/animations': 1.1.0
       '@shoelace-style/localize': 3.1.2
       composed-offset-position: 0.0.4
@@ -10745,7 +10745,7 @@ snapshots:
 
   '@types/range-parser@1.2.4': {}
 
-  '@types/react@18.3.8':
+  '@types/react@18.3.9':
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
