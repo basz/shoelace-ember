@@ -105,7 +105,7 @@
     "eslint-plugin-qunit": "8.1.2",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "file-loader": "6.2.0",
-    "flowbite": "2.5.1",
+    "flowbite": "2.5.2",
     "loader.js": "4.7.0",
     "npm-run-all2": "6.2.3",
     "postcss": "8.4.47",
