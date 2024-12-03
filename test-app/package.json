@@ -113,7 +113,7 @@
     "postcss-scss": "4.0.9",
     "prettier": "3.4.1",
     "qunit": "2.23.0",
-    "qunit-dom": "3.2.1",
+    "qunit-dom": "3.4.0",
     "rsvp": "4.8.5",
     "shoelace-ember": "workspace:*",
     "stylelint": "16.10.0",
