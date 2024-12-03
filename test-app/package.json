@@ -111,7 +111,7 @@
     "postcss": "8.4.49",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
-    "prettier": "3.3.3",
+    "prettier": "3.4.1",
     "qunit": "2.22.0",
     "qunit-dom": "3.2.1",
     "rsvp": "4.8.5",
