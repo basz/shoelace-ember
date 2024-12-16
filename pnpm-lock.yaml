@@ -18,8 +18,8 @@ importers:
         specifier: 8.2.2
         version: 8.2.2
       prettier:
-        specifier: 3.4.1
-        version: 3.4.1
+        specifier: 3.4.2
+        version: 3.4.2
       release-it:
         specifier: 17.10.0
         version: 17.10.0(typescript@5.7.2)
@@ -155,13 +155,13 @@ importers:
         version: 17.14.0(eslint@8.57.1)
       eslint-plugin-prettier:
         specifier: 5.2.1
-        version: 5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.1)
+        version: 5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.2)
       eslint-plugin-simple-import-sort:
         specifier: 12.1.1
         version: 12.1.1(eslint@8.57.1)
       prettier:
-        specifier: 3.4.1
-        version: 3.4.1
+        specifier: 3.4.2
+        version: 3.4.2
       rollup-plugin-copy:
         specifier: 3.5.0
         version: 3.5.0
@@ -405,7 +405,7 @@ importers:
         version: 17.14.0(eslint@8.57.1)
       eslint-plugin-prettier:
         specifier: 5.2.1
-        version: 5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.1)
+        version: 5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.2)
       eslint-plugin-qunit:
         specifier: 8.1.2
         version: 8.1.2(eslint@8.57.1)
@@ -434,8 +434,8 @@ importers:
         specifier: 4.0.9
         version: 4.0.9(postcss@8.4.49)
       prettier:
-        specifier: 3.4.1
-        version: 3.4.1
+        specifier: 3.4.2
+        version: 3.4.2
       qunit:
         specifier: 2.23.0
         version: 2.23.0
@@ -459,7 +459,7 @@ importers:
         version: 0.0.7(stylelint@16.11.0(typescript@5.7.2))(tailwindcss@3.4.16)
       stylelint-prettier:
         specifier: 5.0.2
-        version: 5.0.2(prettier@3.4.1)(stylelint@16.11.0(typescript@5.7.2))
+        version: 5.0.2(prettier@3.4.2)(stylelint@16.11.0(typescript@5.7.2))
       svg-sprite-loader:
         specifier: 6.0.11
         version: 6.0.11
@@ -6766,8 +6766,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.4.1:
-    resolution: {integrity: sha512-G+YdqtITVZmOJje6QkXQWzl3fSfMxFwm1tjTyo9exhkmWSqC4Yhd1+lug++IlR2mvRVAxEDDWYkQdeSztajqgg==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -13295,10 +13295,10 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-prettier@5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.1):
+  eslint-plugin-prettier@5.2.1(@types/eslint@8.56.12)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.4.2):
     dependencies:
       eslint: 8.57.1
-      prettier: 3.4.1
+      prettier: 3.4.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.9.1
     optionalDependencies:
@@ -16276,7 +16276,7 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  prettier@3.4.1: {}
+  prettier@3.4.2: {}
 
   pretty-ms@3.2.0:
     dependencies:
@@ -17221,9 +17221,9 @@ snapshots:
       stylelint: 16.11.0(typescript@5.7.2)
       tailwindcss: 3.4.16
 
-  stylelint-prettier@5.0.2(prettier@3.4.1)(stylelint@16.11.0(typescript@5.7.2)):
+  stylelint-prettier@5.0.2(prettier@3.4.2)(stylelint@16.11.0(typescript@5.7.2)):
     dependencies:
-      prettier: 3.4.1
+      prettier: 3.4.2
       prettier-linter-helpers: 1.0.0
       stylelint: 16.11.0(typescript@5.7.2)
 
