@@ -133,7 +133,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@shoelace-style/shoelace": "2.19.0",
+    "@shoelace-style/shoelace": "2.19.1",
     "markdown-it": "14.1.0"
   }
 }
