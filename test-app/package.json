@@ -112,7 +112,7 @@
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
     "prettier": "3.4.2",
-    "qunit": "2.23.0",
+    "qunit": "2.23.1",
     "qunit-dom": "3.4.0",
     "rsvp": "4.8.5",
     "shoelace-ember": "workspace:*",
