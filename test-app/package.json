@@ -27,9 +27,9 @@
     "test:watch": "ember test --server"
   },
   "devDependencies": {
-    "@babel/core": "7.26.0",
-    "@babel/eslint-parser": "7.25.9",
-    "@babel/plugin-transform-typescript": "7.26.3",
+    "@babel/core": "7.26.10",
+    "@babel/eslint-parser": "7.26.10",
+    "@babel/plugin-transform-typescript": "7.26.8",
     "@csstools/postcss-sass": "5.1.1",
     "@ember/optional-features": "2.2.0",
     "@ember/render-modifiers": "2.1.0",
