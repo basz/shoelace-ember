@@ -73,7 +73,7 @@
     "ember-template-lint": "6.1.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-ember": "12.5.0",
-    "eslint-plugin-n": "17.15.0",
+    "eslint-plugin-n": "17.16.2",
     "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint": "8.57.1",
