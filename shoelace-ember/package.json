@@ -47,7 +47,7 @@
     "@glint/environment-ember-loose": "1.5.2",
     "@glint/template": "1.5.2",
     "@rollup/plugin-babel": "6.0.4",
-    "@tsconfig/ember": "3.0.9",
+    "@tsconfig/ember": "3.0.10",
     "@types/ember__application": "4.0.11",
     "@types/ember__array": "4.0.10",
     "@types/ember__component": "4.0.22",
