@@ -76,7 +76,7 @@
     "autoprefixer": "10.4.21",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "9.1.2",
-    "cssnano": "7.0.6",
+    "cssnano": "7.0.7",
     "ember-auto-import": "2.10.0",
     "ember-cli": "6.3.1",
     "ember-cli-app-version": "7.0.0",
