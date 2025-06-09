@@ -81,7 +81,7 @@
     "rollup-plugin-copy": "3.5.0",
     "rollup": "4.39.0",
     "typescript": "5.8.3",
-    "webpack": "5.99.5"
+    "webpack": "5.99.9"
   },
   "peerDependencies": {
     "@shoelace-style/shoelace": "^2.9.0"
