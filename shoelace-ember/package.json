@@ -34,7 +34,7 @@
     "@embroider/addon-shim": "1.10.0",
     "@shoelace-style/shoelace": "2.20.1",
     "@glimmer/component": "1.1.2",
-    "rollup": "4.39.0"
+    "rollup": "4.43.0"
   },
   "devDependencies": {
     "@babel/core": "7.27.4",
@@ -79,7 +79,7 @@
     "eslint": "8.57.1",
     "prettier": "3.5.3",
     "rollup-plugin-copy": "3.5.0",
-    "rollup": "4.39.0",
+    "rollup": "4.43.0",
     "typescript": "5.8.3",
     "webpack": "5.99.9"
   },
