@@ -107,7 +107,7 @@
     "file-loader": "6.2.0",
     "flowbite": "2.5.2",
     "loader.js": "4.7.0",
-    "npm-run-all2": "7.0.2",
+    "npm-run-all2": "8.0.4",
     "postcss": "8.5.4",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
